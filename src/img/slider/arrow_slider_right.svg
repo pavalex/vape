@@ -1,0 +1,15 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.74 12.94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2.27px;
+      }
+    </style>
+  </defs>
+  <title>arrow_slider_right</title>
+  <polyline class="cls-1" points="1.13 1.13 6.61 6.61 1.42 11.8"/>
+</svg>

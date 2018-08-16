@@ -1,0 +1,15 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.73 17.83">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #4b8ff4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.13px;
+      }
+    </style>
+  </defs>
+  <title>search</title>
+  <path class="cls-1" d="M314.16,405.26l-3.8-3.8m-7-12.9a6.78,6.78,0,1,1-6.78,6.78,6.78,6.78,0,0,1,6.78-6.78h0Z" transform="translate(-296 -388)"/>
+</svg>

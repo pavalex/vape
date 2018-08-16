@@ -1,0 +1,54 @@
+a 
+  display: inline-block
+.button 
+  color: $text-white
+  background-color: $color-normal
+  font-family: 'Helvetica', sans-serif
+  font-size: 1.3rem
+  font-weight: 400
+  padding: 0.8rem 2rem
+  border: 1px solid transparent  
+  border-radius: 5px
+  vertical-align: middle
+  transition: all 0.3s
+  &:hover
+    background-color: $color-hover
+    color: $text-white
+  &:active
+    background-color: $color-active
+    color: $text-white
+
+.button-orange
+  color: $text-white
+  background-color: $color-orange
+  font-family: 'Helvetica', sans-serif
+  font-size: 1.3rem
+  font-weight: 400
+  padding: 1.5rem 5rem
+  border: 1px solid transparent  
+  border-radius: 5px
+  vertical-align: middle
+  transition: all 0.3s
+  &:hover
+    background-color: $color-orange-hover
+    color: $text-white
+  &:active
+    background-color: $color-orange-active
+    color: $text-white
+
+.input 
+  font-family: 'Helvetica', sans-serif
+  color: $text-input
+  font-size: 1.2rem
+  font-weight: 400
+  padding: 0.8rem 1.6rem
+  border: 1px solid $color-border-form
+  border-radius: 3px
+  vertical-align: middle
+
+input, button 
+  &:focus
+    outline: none
+
+// .container 
+//   border: 1px solid red

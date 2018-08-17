@@ -1,0 +1,28 @@
+.discounts 
+  padding-top: 4rem
+  padding-bottom: 4rem
+  background: $color-normal url(../img/discounts/discounts-bg.jpg) center no-repeat
+  img 
+    width: 100%
+  &-title 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 2rem
+    &__white 
+      color: $text-white
+  .discounts-btn 
+    padding: 0.4rem 2.3rem
+    border-radius: 2px
+    background-color: $text-white
+    color: $color-normal
+    font-family: 'Helvetica', sans-serif
+    font-size: 1.3rem
+    font-weight: 400
+    border: 1px solid transparent  
+    vertical-align: middle
+    text-decoration: none
+    transition: all 0.3s
+    &:hover
+      background-color: darken($text-white, 10%)
+      color: lighten($color-normal, 10%)

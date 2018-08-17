@@ -1,5 +1,9 @@
 a 
   display: inline-block
+h2 
+  font-size: 3rem
+  font-weight: 300
+  color: $text-title
 .button 
   color: $text-white
   background-color: $color-normal
@@ -22,7 +26,7 @@ a
   color: $text-white
   background-color: $color-orange
   font-family: 'Helvetica', sans-serif
-  font-size: 1.3rem
+  font-size: 1.5rem
   font-weight: 400
   padding: 1.5rem 5rem
   border: 1px solid transparent  
@@ -36,6 +40,23 @@ a
     background-color: $color-orange-active
     color: $text-white
 
+.button-disabled   
+  color: $text-disabled
+  background-color: $bg-disabled
+  font-family: 'Helvetica', sans-serif
+  font-size: 1.3rem
+  font-weight: 400
+  padding: 0.9rem 3.4rem
+  border: 1px solid transparent  
+  border-radius: 5px
+  vertical-align: middle
+  &:hover
+    background-color: $bg-disabled
+    color: $text-disabled
+  &:active
+    background-color: $bg-disabled
+    color: $text-disabled
+
 .input 
   font-family: 'Helvetica', sans-serif
   color: $text-input
@@ -45,6 +66,20 @@ a
   border: 1px solid $color-border-form
   border-radius: 3px
   vertical-align: middle
+
+.col-mod
+  &:nth-child(odd)
+    padding-right: 8px
+  &:nth-child(2)
+    padding-right: 8px
+  &:nth-child(3)
+    padding-left: 8px
+  &:nth-child(even)
+    padding-left: 8px
+    &:nth-child(6)
+    padding-right: 8px
+  &:nth-child(7)
+    padding-left: 8px
 
 input, button 
   &:focus

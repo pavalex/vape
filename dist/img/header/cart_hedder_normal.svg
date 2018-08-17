@@ -1,0 +1,15 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.14 17.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #dadada;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.13px;
+      }
+    </style>
+  </defs>
+  <title>cart_hedder_normal</title>
+  <path class="cls-1" d="M301.82,394.18c-0.94-7.51,8.42-7.46,7.25,0m3.5,10.3h-14l1.22-12.22h11.52l1.26,12.22h0Z" transform="translate(-298 -388)"/>
+</svg>

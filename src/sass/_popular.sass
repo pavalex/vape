@@ -1,0 +1,144 @@
+.popular 
+  padding-top: 5rem
+  padding-bottom: 3.5rem
+  background-color: $popular-bg
+  &-title 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 2rem
+  &-btn 
+    padding: 0.4rem 2.3rem
+    border-radius: 2px
+  .popular-btn
+    text-decoration: none
+  &-block 
+    height: 44rem
+    border: 1px solid $popular-border
+    border-radius: 5px
+    margin-bottom: 1.5rem
+    background-color: $text-white
+    padding: 1rem 1rem 2rem 1rem
+    cursor: pointer
+    transition: 0.4s
+    &:hover 
+      transform: scale(1.05, 1.05)
+  &-info  
+    display: flex
+    justify-content: space-between
+    &-code 
+      font-size: 1.3rem
+      font-weight: 400
+      color: $popular-txt
+    &-stock 
+      position: relative
+      font-size: 1.3rem
+      font-weight: 400
+      color: $popular-txt-yes
+      &::before 
+        content: ''
+        display: block
+        width: 16px
+        height: 17px
+        position: absolute
+        top: 0
+        left: -22px
+        background: url(../img/popular/in_stock.svg) center no-repeat
+    &-outstock 
+      position: relative
+      font-size: 1.3rem
+      font-weight: 400
+      color: $popular-txt-no
+      &::before 
+        content: ''
+        display: block
+        width: 16px
+        height: 17px
+        position: absolute
+        top: 0
+        left: -22px
+        background: url(../img/popular/out_of_stock.svg) center no-repeat
+    &-expects 
+      position: relative
+      font-size: 1.3rem
+      font-weight: 400
+      color: $text-disabled
+      &::before 
+        content: ''
+        display: block
+        width: 16px
+        height: 17px
+        position: absolute
+        top: 0
+        left: -22px
+        background: url(../img/popular/expects.svg) center no-repeat
+  &-img 
+    position: relative
+    padding-top: 2rem
+    padding-bottom: 2rem
+    &-picture
+      display: block
+      margin: 0 auto
+    &-wrapper 
+      position: absolute
+      top: 20px
+    &-block 
+      display: block
+      color: $text-white
+      background-color: $popuar-nev
+      font-family: 'Helvetica', sans-serif
+      font-size: 1.2rem
+      font-weight: 500
+      padding: 0.1rem 0.7rem
+      margin-bottom: 0.5rem
+      border: 1px solid transparent  
+      border-radius: 3px
+      vertical-align: middle
+      transition: all 0.3s
+      &__pink
+        background-color: $popular-sale
+  &-descr 
+    height: 5rem
+    text-align: center
+    font-size: 16px
+    font-weight: 500
+    color: $text-color-black
+    margin-bottom: 0.5rem
+  &-price 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 1rem
+    &-star 
+      display: flex
+      &-box 
+        width: 17px
+        height: 15px
+        margin-right: 2px
+        margin-bottom: 4px
+    &-cost 
+      font-size: 22px
+      font-weight: 500
+      color: $text-title
+      span 
+        font-weight: 300
+    &-cost__disabled
+      color: $text-disabled
+  &-buy 
+    display: flex
+    justify-content: space-between
+    align-items: center 
+    &-add 
+      display: flex
+      &-box 
+        width: 31px
+        height: 31px
+        cursor: pointer
+        margin-right: 4px
+    &-cart
+    .popular-buy-btn 
+      padding: 0.9rem 3.4rem
+      box-shadow: 0 0 21px rgba(0, 0, 0, 0.1)
+      text-decoration: none
+    .button-disabled
+      cursor: pointer

@@ -1,0 +1,23 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.93 28.93">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #367add;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.42px;
+      }
+    </style>
+  </defs>
+  <title>arrow_right_hover</title>
+  <g>
+    <path class="cls-1" d="M318.16,382H292.77a1.77,1.77,0,0,0-1.77,1.77v25.39a1.77,1.77,0,0,0,1.77,1.77h25.39a1.77,1.77,0,0,0,1.77-1.77V383.77a1.77,1.77,0,0,0-1.77-1.77h0Z" transform="translate(-291 -382)"/>
+    <polyline class="cls-2" points="11.65 8.48 17.4 14.23 11.6 20.03"/>
+  </g>
+</svg>

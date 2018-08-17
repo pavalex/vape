@@ -1,0 +1,23 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.93 28.93">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2766c3;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.42px;
+      }
+    </style>
+  </defs>
+  <title>arrow_left_active</title>
+  <g>
+    <path class="cls-1" d="M292.77,382h25.39a1.77,1.77,0,0,1,1.77,1.77v25.39a1.77,1.77,0,0,1-1.77,1.77H292.77a1.77,1.77,0,0,1-1.77-1.77V383.77a1.77,1.77,0,0,1,1.77-1.77h0Z" transform="translate(-291 -382)"/>
+    <polyline class="cls-2" points="17.27 8.48 11.52 14.23 17.32 20.03"/>
+  </g>
+</svg>

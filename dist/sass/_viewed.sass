@@ -1,0 +1,60 @@
+.viewed
+  padding-bottom: 5rem
+  background-color: $popular-bg
+  &-title 
+    margin-bottom: 2.5rem
+  &-slider
+    &-box 
+      width: 218px
+      height: 308px
+      background-color: $text-white
+      border: 1px solid $popular-border
+      border-radius: 3px
+      margin-right: 0.5rem
+      margin-left: 0.5rem
+      padding-top: 1.8rem
+      outline: none
+      cursor: pointer
+    &-img 
+      margin-bottom: 2rem
+    &-picture
+      display: block
+      margin: 0 auto
+    &-title 
+      height: 4rem
+      text-align: center
+      font-size: 1.6rem
+      font-weight: 500
+      color: $text-title
+      margin-bottom: 1.5rem
+    &-price 
+      text-align: center
+      font-size: 2rem
+      font-weight: 500
+      color: $text-title
+      span 
+        font-weight: 300
+    &-arrow  
+      position: absolute
+      width: 30px
+      height: 30px
+      z-index: 2
+      cursor: pointer
+      top: -62px
+      &__left-normal 
+        background: url(../img/viewed/arrow_left_normal.svg) no-repeat center
+        right: 38px
+        transition: all 0.3s
+        &:hover 
+          background: url(../img/viewed/arrow_left_hover.svg) no-repeat center
+        &:active 
+          background: url(../img/viewed/arrow_left_active.svg) no-repeat center      
+      &__right-normal 
+        background: url(../img/viewed/arrow_right_normal.svg) no-repeat center
+        right: 0
+        transition: all 0.3s
+        &:hover 
+          background: url(../img/viewed/arrow_right_hover.svg) no-repeat center
+        &:active 
+          background: url(../img/viewed/arrow_right_active.svg) no-repeat center
+      

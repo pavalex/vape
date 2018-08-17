@@ -91,23 +91,6 @@ h2 {
   vertical-align: middle;
 }
 
-.col-mod:nth-child(odd) {
-  padding-right: 8px;
-}
-.col-mod:nth-child(2) {
-  padding-right: 8px;
-}
-.col-mod:nth-child(3) {
-  padding-left: 8px;
-}
-.col-mod:nth-child(even) {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-.col-mod:nth-child(7) {
-  padding-left: 8px;
-}
-
 input:focus, button:focus {
   outline: none;
 }
@@ -525,7 +508,7 @@ input:focus, button:focus {
   height: 44rem;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
   background-color: #fff;
   padding: 1rem 1rem 2rem 1rem;
   cursor: pointer;
@@ -656,6 +639,7 @@ input:focus, button:focus {
 .popular-price-star-box {
   width: 17px;
   height: 15px;
+  border: none;
   margin-right: 2px;
   margin-bottom: 4px;
 }
@@ -687,10 +671,31 @@ input:focus, button:focus {
   display: flex;
 }
 .popular-buy-add-box {
+  position: relative;
   width: 31px;
   height: 31px;
   cursor: pointer;
   margin-right: 4px;
+}
+.popular-buy-add-box:hover .popular-buy-add-img__hover {
+  display: block;
+  z-index: 4;
+}
+.popular-buy-add-box:active .popular-buy-add-img__active {
+  display: block;
+  z-index: 4;
+}
+.popular-buy-add-img {
+  position: absolute;
+}
+.popular-buy-add-img__normal {
+  z-index: 3;
+}
+.popular-buy-add-img__hover {
+  display: none;
+}
+.popular-buy-add-img__active {
+  display: none;
 }
 .popular-buy .popular-buy-btn {
   padding: 0.9rem 3.4rem;
@@ -700,4 +705,64 @@ input:focus, button:focus {
 }
 .popular-buy .button-disabled {
   cursor: pointer;
+}
+
+.discounts {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  background: #4b8ff6 url(../img/discounts/discounts-bg.jpg) center no-repeat;
+}
+.discounts img {
+  width: 100%;
+}
+.discounts-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+.discounts-title__white {
+  color: #fff;
+}
+.discounts .discounts-btn {
+  padding: 0.4rem 2.3rem;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #4b8ff6;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  border: 1px solid transparent;
+  vertical-align: middle;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.discounts .discounts-btn:hover {
+  background-color: #e6e6e6;
+  color: #7cadf8;
+}
+
+.news {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  background-color: #f6f6f6;
+}
+.news-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
 }

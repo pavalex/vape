@@ -639,6 +639,7 @@ input:focus, button:focus {
 .popular-price-star-box {
   width: 17px;
   height: 15px;
+  border: none;
   margin-right: 2px;
   margin-bottom: 4px;
 }
@@ -670,10 +671,31 @@ input:focus, button:focus {
   display: flex;
 }
 .popular-buy-add-box {
+  position: relative;
   width: 31px;
   height: 31px;
   cursor: pointer;
   margin-right: 4px;
+}
+.popular-buy-add-box:hover .popular-buy-add-img__hover {
+  display: block;
+  z-index: 4;
+}
+.popular-buy-add-box:active .popular-buy-add-img__active {
+  display: block;
+  z-index: 4;
+}
+.popular-buy-add-img {
+  position: absolute;
+}
+.popular-buy-add-img__normal {
+  z-index: 3;
+}
+.popular-buy-add-img__hover {
+  display: none;
+}
+.popular-buy-add-img__active {
+  display: none;
 }
 .popular-buy .popular-buy-btn {
   padding: 0.9rem 3.4rem;
@@ -686,7 +708,7 @@ input:focus, button:focus {
 }
 
 .discounts {
-  padding-top: 4rem;
+  padding-top: 5rem;
   padding-bottom: 4rem;
   background: #4b8ff6 url(../img/discounts/discounts-bg.jpg) center no-repeat;
 }
@@ -725,4 +747,22 @@ input:focus, button:focus {
 .discounts .discounts-btn:hover {
   background-color: #e6e6e6;
   color: #7cadf8;
+}
+
+.news {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  background-color: #f6f6f6;
+}
+.news-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3rem;
 }

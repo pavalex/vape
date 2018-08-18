@@ -44,7 +44,8 @@ h3
     background-color: $color-orange-active
     color: $text-white
 
-.button-disabled   
+.button-disabled,
+.button-continue 
   color: $text-disabled
   background-color: $bg-disabled
   font-family: 'Helvetica', sans-serif
@@ -60,6 +61,14 @@ h3
   &:active
     background-color: $bg-disabled
     color: $text-disabled
+  
+.button-continue
+  &:hover
+    background-color: $color-hover
+    color: $text-white
+  &:active
+    background-color: $color-active
+    color: $text-white
 
 .input 
   font-family: 'Helvetica', sans-serif
@@ -74,3 +83,14 @@ h3
 input, button 
   &:focus
     outline: none
+  
+.bg-brown
+  background-color: #c2a698
+.bg-black
+  background-color: #0c0c0c
+.bg-gray
+  background-color: #cbccce
+.bg-red
+  background-color: #d23d51
+.bg-pink
+  background-color: #e15ec1

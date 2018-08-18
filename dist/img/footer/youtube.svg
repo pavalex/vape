@@ -1,0 +1,23 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.67 32.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #d42222;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.13px;
+      }
+
+      .cls-2 {
+        fill: #d42222;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>youtube</title>
+  <g>
+    <path class="cls-1" d="M292.51,380.57h25.65a3,3,0,0,1,2.94,2.94v25.65a3,3,0,0,1-2.94,2.94H292.51a3,3,0,0,1-2.94-2.94V383.51a3,3,0,0,1,2.94-2.94h0Z" transform="translate(-289 -380)"/>
+    <path class="cls-2" d="M300,390.85h10.62a2.66,2.66,0,0,1,2.66,2.66v5.66a2.66,2.66,0,0,1-2.66,2.66H300a2.66,2.66,0,0,1-2.66-2.66v-5.66a2.66,2.66,0,0,1,2.66-2.66h0Zm4.47,2.66,2.83,2.83-2.83,2.83v-5.66h0Z" transform="translate(-289 -380)"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.54 31.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d42222;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>youtube_hover</title>
+  <g>
+    <path class="cls-1" d="M292.94,381h25.65a3,3,0,0,1,2.94,2.94v25.65a3,3,0,0,1-2.94,2.94H292.94a3,3,0,0,1-2.94-2.94V383.94a3,3,0,0,1,2.94-2.94h0Z" transform="translate(-290 -381)"/>
+    <path class="cls-2" d="M300.46,391.28h10.62a2.66,2.66,0,0,1,2.66,2.66v5.66a2.66,2.66,0,0,1-2.66,2.66H300.46a2.66,2.66,0,0,1-2.66-2.66v-5.66a2.66,2.66,0,0,1,2.66-2.66h0Zm4.47,2.66,2.83,2.83-2.83,2.83v-5.66h0Z" transform="translate(-290 -381)"/>
+  </g>
+</svg>

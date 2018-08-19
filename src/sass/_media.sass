@@ -1,9 +1,324 @@
 @media (max-width: 575.98px)
+  html 
+    font-size: 8px
+  .hide-block
+    display: none
+  .header
+    &-top 
+      &-menu
+        display: none
+      &-data         
+        justify-content: space-around
+        align-items: center
+        margin-bottom: 0.5rem
+        &__lang
+          &::after 
+            top: 5px
+    &-middle 
+      &-basket
+        // width: 25rem
+        flex-grow: 1
+      &-link 
+        &-burger 
+          display: block          
+      &-form 
+        display: none
+      &-btn 
+        display: none
+        &-mobile
+          display: block
+      &-basket 
+        margin-top: 2rem
+      &-wrap
+    &-bottom 
+      &-nav
+        flex-direction: column
+        align-items: center
+        &__list 
+          font-size: 2.7rem 
+  .slider-bg
+    display: none
+  h2
+    font-size: 2rem
+  .discount-o
+    display: none
+  .viewed-slider-arrow
+    top: -42px
+  .notification
+    &-box
+      margin-bottom: 2rem
+    &-subtitle
+      text-align: center
+  .footer
+    &-logo 
+      display: none
+    &-catalog,
+    &-clients,
+    &-contacts,
+    &-payment
+      text-align: center
+      margin-bottom: 2rem
+    &-title
+      font-size: 2.6rem
+    &-link 
+      font-size: 1.8rem
+  .overlay-basket
+    position: absolute
+  .basket
+    &-modal 
+      width: 33rem
+      top: 0
+      &-optional
+        flex-direction: column
+      &-item 
+        &-desc
+          width: 25rem  
+        &-count 
+          margin-top: 1rem
+      &-buy
+        display: block
+        a 
+          width: 100%
+          margin-bottom: 1rem
+          text-align: center
 
 @media (min-width: 576px) and (max-width: 767.98px)
+  html 
+    font-size: 8px
+  .hide-block
+    display: none
+  .header
+    &-top 
+      &-menu
+        display: none
+      &-data 
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 0.5rem
+        margin-left: 0
+        &__lang
+          margin-right: 5rem
+          &::after 
+            top: 5px
+    &-middle 
+      &-logo
+        margin-right: 0
+      &-link 
+        &-burger 
+          display: block          
+      &-form 
+        display: none
+      &-btn 
+        display: none
+        &-mobile
+          display: block
+      &-basket 
+        margin-top: 2rem
+      &-wrap
+    &-bottom 
+      &-nav
+        flex-direction: column
+        align-items: center
+        &__list 
+          font-size: 2.7rem 
+  .slider-bg
+    display: none
+  h2
+    font-size: 2rem
+  .viewed-slider-arrow
+    top: -42px
+  .notification
+    &-box
+      margin-bottom: 2rem
+      min-height: 30.6rem
+    &-subtitle
+      text-align: center
+  .footer
+    &-logo 
+      display: none
+    &-catalog,
+    &-clients,
+    &-contacts,
+    &-payment
+      text-align: center
+      margin-bottom: 2rem
+    &-title
+      font-size: 2.6rem
+    &-link 
+      font-size: 1.8rem
+  .overlay-basket
+    position: absolute
+  .basket
+    &-modal 
+      width: 36.5rem
+      top: 0
+      &-optional
+        flex-direction: column
+      &-item 
+        &-desc
+          width: 25rem  
+        &-count 
+          margin-top: 1rem
+      &-buy
+        display: block
+        a 
+          width: 100%
+          margin-bottom: 1rem
+          text-align: center
 
 @media (min-width: 768px) and (max-width: 991.98px)
+  html 
+    font-size: 9px
+  .hide-block
+    display: none
+  .header
+    &-top 
+      &-btn 
+        display: none
+      &-menu
+        &__list 
+          margin-right: 3.7rem
+      &-data 
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 0.5rem
+        margin-left: 0
+        &__lang
+          margin-left: 5rem
+          &::after 
+            top: 5px
+    &-middle 
+      &-logo
+        margin-right: 0
+      &-basket
+        margin-top: 0
+      &-link 
+        &-burger 
+          display: block          
+      &-form 
+        display: none
+      &-btn 
+        display: none
+        &-mobile
+          display: block
+      &-basket 
+        margin-top: 0
+      &-wrap
+    &-bottom 
+      &-nav
+        flex-direction: column
+        align-items: center
+        &__list 
+          font-size: 2.7rem 
+  .slider-bg
+    display: none
+  h2
+    font-size: 2rem
+  .viewed-slider-arrow
+    top: -42px
+  .notification
+    &-box
+      margin-bottom: 2rem
+      min-height: 30.6rem
+    &-subtitle
+      text-align: center
+  .footer
+    &-logo 
+      // display: none
+    &-social
+      &-box
+        width: 2rem
+        height: 2rem
+    &-contacts
+      .footer-contacts-phone__tel
+        font-size: 1.5rem
+      &-btn 
+        display: none
+  .overlay-basket
+    position: absolute
+  .basket
+    &-modal 
+      top: 0
+      left: -5rem
+      &-optional
+      &-item 
+        &-desc
+          width: 25rem  
+        &-count 
+          margin-top: 1rem
 
 @media (min-width: 992px) and (max-width: 1199.98px)
-
+  .slider-arrow__left
+    left: 45%
+  .slider-arrow__right
+    right: 45%
+  .hide-block
+    display: block
+  .header
+    &-top 
+      &-menu
+        &__list 
+          margin-right: 3.7rem
+      &-data 
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 0.5rem
+        margin-left: 0
+        &__lang
+          margin-left: 5rem
+          &::after 
+            top: 5px
+    &-middle 
+      &-logo
+        margin-right: 0
+      &-basket
+        margin-top: 0
+      &-link 
+        &-burger 
+          display: none          
+      &-input 
+          width: 25rem
+      &-btn 
+        display: none
+        &-mobile
+          display: block
+      &-basket 
+        margin-top: 0
+      &-wrap
+    &-bottom 
+      display: block  
+  h2
+    font-size: 2rem
+  .viewed-slider-arrow
+    top: -42px
+  .notification
+    &-box
+      margin-bottom: 2rem
+      min-height: 30.6rem
+    &-subtitle
+      text-align: center
+  .footer
+    &-logo 
+      // display: none
+    &-social
+      &-box
+        width: 2rem
+        height: 2rem
+    &-contacts
+      .footer-contacts-phone__tel
+        font-size: 1.5rem
+  .overlay-basket
+    position: absolute
+  .basket
+    &-modal 
+      top: 0
+      left: -5rem
+      &-optional
+      &-item 
+        &-desc
+          width: 25rem  
+        &-count 
+          margin-top: 1rem
 @media (min-width: 1200px)
+  .hide-block
+    display: block

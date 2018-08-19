@@ -34,6 +34,7 @@ h3 {
   vertical-align: middle;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #367ade;
@@ -229,6 +230,28 @@ input:focus, button:focus {
   padding-bottom: 2rem;
   border-bottom: 1px solid #e3e3e3;
 }
+.header-middle-link-burger {
+  display: none;
+  height: 3px;
+  width: 23px;
+  background-color: #4b8ff6;
+}
+.header-middle-link-burger:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 23px;
+  background-color: #4b8ff6;
+  margin-top: -8px;
+}
+.header-middle-link-burger:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 23px;
+  background-color: #4b8ff6;
+  margin-top: 8px;
+}
 .header-middle-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,6 +319,9 @@ input:focus, button:focus {
 .header-middle-btn {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.header-middle-btn-mobile {
+  display: none;
 }
 .header-middle-basket {
   position: relative;
@@ -477,6 +503,8 @@ input:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 1.8rem 2rem;
 }
 .basket-modal-item-desc {
@@ -506,6 +534,8 @@ input:focus, button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 8.7rem;
   height: 4.1rem;
   padding: 0 0.7rem;
@@ -787,6 +817,9 @@ input:focus, button:focus {
   padding-bottom: 9.3rem;
   color: #fff;
 }
+.slider-bg {
+  display: block;
+}
 .slider-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -901,7 +934,7 @@ input:focus, button:focus {
   text-decoration: none;
 }
 .popular-block {
-  height: 44rem;
+  min-height: 44rem;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   margin-bottom: 2.5rem;
@@ -1403,4 +1436,461 @@ input:focus, button:focus {
   font-size: 1.3rem;
   font-weight: 300;
   color: #949494;
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 8px;
+  }
+
+  .hide-block {
+    display: none;
+  }
+
+  .header-top-menu {
+    display: none;
+  }
+  .header-top-data {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  .header-top-data__lang::after {
+    top: 5px;
+  }
+  .header-middle-basket {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .header-middle-link-burger {
+    display: block;
+  }
+  .header-middle-form {
+    display: none;
+  }
+  .header-middle-btn {
+    display: none;
+  }
+  .header-middle-btn-mobile {
+    display: block;
+  }
+  .header-middle-basket {
+    margin-top: 2rem;
+  }
+  .header-bottom-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-bottom-nav__list {
+    font-size: 2.7rem;
+  }
+
+  .slider-bg {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .discount-o {
+    display: none;
+  }
+
+  .viewed-slider-arrow {
+    top: -42px;
+  }
+
+  .notification-box {
+    margin-bottom: 2rem;
+  }
+  .notification-subtitle {
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+  .footer-catalog, .footer-clients, .footer-contacts, .footer-payment {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer-title {
+    font-size: 2.6rem;
+  }
+  .footer-link {
+    font-size: 1.8rem;
+  }
+
+  .overlay-basket {
+    position: absolute;
+  }
+
+  .basket-modal {
+    width: 33rem;
+    top: 0;
+  }
+  .basket-modal-optional {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket-modal-item-desc {
+    width: 25rem;
+  }
+  .basket-modal-item-count {
+    margin-top: 1rem;
+  }
+  .basket-modal-buy {
+    display: block;
+  }
+  .basket-modal-buy a {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  html {
+    font-size: 8px;
+  }
+
+  .hide-block {
+    display: none;
+  }
+
+  .header-top-menu {
+    display: none;
+  }
+  .header-top-data {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+  .header-top-data__lang {
+    margin-right: 5rem;
+  }
+  .header-top-data__lang::after {
+    top: 5px;
+  }
+  .header-middle-logo {
+    margin-right: 0;
+  }
+  .header-middle-link-burger {
+    display: block;
+  }
+  .header-middle-form {
+    display: none;
+  }
+  .header-middle-btn {
+    display: none;
+  }
+  .header-middle-btn-mobile {
+    display: block;
+  }
+  .header-middle-basket {
+    margin-top: 2rem;
+  }
+  .header-bottom-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-bottom-nav__list {
+    font-size: 2.7rem;
+  }
+
+  .slider-bg {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .viewed-slider-arrow {
+    top: -42px;
+  }
+
+  .notification-box {
+    margin-bottom: 2rem;
+    min-height: 30.6rem;
+  }
+  .notification-subtitle {
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+  .footer-catalog, .footer-clients, .footer-contacts, .footer-payment {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .footer-title {
+    font-size: 2.6rem;
+  }
+  .footer-link {
+    font-size: 1.8rem;
+  }
+
+  .overlay-basket {
+    position: absolute;
+  }
+
+  .basket-modal {
+    width: 36.5rem;
+    top: 0;
+  }
+  .basket-modal-optional {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .basket-modal-item-desc {
+    width: 25rem;
+  }
+  .basket-modal-item-count {
+    margin-top: 1rem;
+  }
+  .basket-modal-buy {
+    display: block;
+  }
+  .basket-modal-buy a {
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  html {
+    font-size: 9px;
+  }
+
+  .hide-block {
+    display: none;
+  }
+
+  .header-top-btn {
+    display: none;
+  }
+  .header-top-menu__list {
+    margin-right: 3.7rem;
+  }
+  .header-top-data {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+  .header-top-data__lang {
+    margin-left: 5rem;
+  }
+  .header-top-data__lang::after {
+    top: 5px;
+  }
+  .header-middle-logo {
+    margin-right: 0;
+  }
+  .header-middle-basket {
+    margin-top: 0;
+  }
+  .header-middle-link-burger {
+    display: block;
+  }
+  .header-middle-form {
+    display: none;
+  }
+  .header-middle-btn {
+    display: none;
+  }
+  .header-middle-btn-mobile {
+    display: block;
+  }
+  .header-middle-basket {
+    margin-top: 0;
+  }
+  .header-bottom-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-bottom-nav__list {
+    font-size: 2.7rem;
+  }
+
+  .slider-bg {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .viewed-slider-arrow {
+    top: -42px;
+  }
+
+  .notification-box {
+    margin-bottom: 2rem;
+    min-height: 30.6rem;
+  }
+  .notification-subtitle {
+    text-align: center;
+  }
+
+  .footer-social-box {
+    width: 2rem;
+    height: 2rem;
+  }
+  .footer-contacts .footer-contacts-phone__tel {
+    font-size: 1.5rem;
+  }
+  .footer-contacts-btn {
+    display: none;
+  }
+
+  .overlay-basket {
+    position: absolute;
+  }
+
+  .basket-modal {
+    top: 0;
+    left: -5rem;
+  }
+  .basket-modal-item-desc {
+    width: 25rem;
+  }
+  .basket-modal-item-count {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .slider-arrow__left {
+    left: 45%;
+  }
+
+  .slider-arrow__right {
+    right: 45%;
+  }
+
+  .hide-block {
+    display: block;
+  }
+
+  .header-top-menu__list {
+    margin-right: 3.7rem;
+  }
+  .header-top-data {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+  .header-top-data__lang {
+    margin-left: 5rem;
+  }
+  .header-top-data__lang::after {
+    top: 5px;
+  }
+  .header-middle-logo {
+    margin-right: 0;
+  }
+  .header-middle-basket {
+    margin-top: 0;
+  }
+  .header-middle-link-burger {
+    display: none;
+  }
+  .header-middle-input {
+    width: 25rem;
+  }
+  .header-middle-btn {
+    display: none;
+  }
+  .header-middle-btn-mobile {
+    display: block;
+  }
+  .header-middle-basket {
+    margin-top: 0;
+  }
+  .header-bottom {
+    display: block;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .viewed-slider-arrow {
+    top: -42px;
+  }
+
+  .notification-box {
+    margin-bottom: 2rem;
+    min-height: 30.6rem;
+  }
+  .notification-subtitle {
+    text-align: center;
+  }
+
+  .footer-social-box {
+    width: 2rem;
+    height: 2rem;
+  }
+  .footer-contacts .footer-contacts-phone__tel {
+    font-size: 1.5rem;
+  }
+
+  .overlay-basket {
+    position: absolute;
+  }
+
+  .basket-modal {
+    top: 0;
+    left: -5rem;
+  }
+  .basket-modal-item-desc {
+    width: 25rem;
+  }
+  .basket-modal-item-count {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .hide-block {
+    display: block;
+  }
 }

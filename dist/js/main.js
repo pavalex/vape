@@ -70,6 +70,54 @@ $(document).ready(function() {
     nextArrow: '<div class="slider-arrow slider-arrow__right"></div>'
   });
 
+  $(".viewed-slider-2").slick({
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    prevArrow:
+      '<div class="viewed-slider-arrow viewed-slider-arrow__left-normal"></div>',
+    nextArrow:
+      '<div class="viewed-slider-arrow viewed-slider-arrow__right-normal"></div>',
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          prevArrow:
+            '<div class="viewed-slider-arrow viewed-slider-arrow__left-normal"></div>',
+          nextArrow:
+            '<div class="viewed-slider-arrow viewed-slider-arrow__right-normal"></div>'
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          prevArrow:
+            '<div class="viewed-slider-arrow viewed-slider-arrow__left-normal"></div>',
+          nextArrow:
+            '<div class="viewed-slider-arrow viewed-slider-arrow__right-normal"></div>'
+        }
+      }
+    ]
+    // prevArrow:
+    //   '<div class="viewed-slider-arrow viewed-slider-arrow__left-normal"></div>',
+    // nextArrow:
+    //   '<div class="viewed-slider-arrow viewed-slider-arrow__right-normal"></div>',
+  });
+
   $(".viewed-slider").slick({
     arrows: true,
     slidesToShow: 5,
@@ -116,5 +164,69 @@ $(document).ready(function() {
     //   '<div class="viewed-slider-arrow viewed-slider-arrow__left-normal"></div>',
     // nextArrow:
     //   '<div class="viewed-slider-arrow viewed-slider-arrow__right-normal"></div>',
+  });
+
+  
+
+  $(".product-slider-top").slick({
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: ".product-slider-bottom",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: true,
+          prevArrow:
+            '<div class="product-slider-arrow product-slider-arrow__left"></div>',
+          nextArrow:
+            '<div class="product-slider-arrow product-slider-arrow__right"></div>'
+        }
+      }
+    ]
+  });
+
+  $(".product-slider-bottom").slick({
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    focusOnSelect: true,
+    prevArrow:
+      '<div class="product-slider-arrow product-slider-arrow__left"></div>',
+    nextArrow:
+      '<div class="product-slider-arrow product-slider-arrow__right"></div>',
+    asNavFor: ".product-slider-top"
+  });
+
+  /* tabs */
+  $(document).ready(function() {
+    $(".accordion-tabs")
+      .children("li")
+      .first()
+      .children("a")
+      .addClass("is-active")
+      .next()
+      .addClass("is-open")
+      .show();
+    $(".accordion-tabs").on("click", "li > a", function(event) {
+      if (!$(this).hasClass("is-active")) {
+        event.preventDefault();
+        $(".accordion-tabs .is-open")
+          .removeClass("is-open")
+          .hide();
+        $(this)
+          .next()
+          .toggleClass("is-open")
+          .toggle();
+        $(".accordion-tabs")
+          .find(".is-active")
+          .removeClass("is-active");
+        $(this).addClass("is-active");
+      } else {
+        event.preventDefault();
+      }
+    });
   });
 });

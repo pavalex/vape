@@ -1,0 +1,22 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.54 31.54">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2ca4e0;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>telegram_hover</title>
+  <g>
+    <path class="cls-1" d="M292.94,381H318.6a3,3,0,0,1,2.94,2.94V409.6a3,3,0,0,1-2.94,2.94H292.94A3,3,0,0,1,290,409.6V383.94a3,3,0,0,1,2.94-2.94h0Z" transform="translate(-290 -381)"/>
+    <path class="cls-2" d="M303.2,398.95v1.4c0,1.92-.31,1.94,1.18.8l1-.8,3.46,2.4c1.08-3.89,2-8.09,3.1-12-4.87,1.64-9.84,3.47-14.71,5.11l4.4,2.06,7.86-4.63-6.34,5.63h0Z" transform="translate(-290 -381)"/>
+  </g>
+</svg>

@@ -1,0 +1,243 @@
+.product 
+  padding-top: 3rem
+  padding-bottom: 5rem
+  &-viewed
+    padding-top: 5rem
+  &-title 
+    margin-bottom: 3rem
+  &-slider
+    &-top
+      &-img 
+        position: relative
+        border: 1px solid $popular-border
+        border-radius: 3px
+      &-wrapper       
+        left: 2rem  
+        z-index: 1
+    &-picture
+      margin: 0 auto
+    &-bottom
+      margin-top: 0.5rem
+      padding-left: 1.5rem
+      padding-right: 1.5rem
+      margin-bottom: 6rem
+      &-img
+        height: 9.7rem        
+        border: 1px solid $popular-border
+        border-radius: 3px
+        margin-left: 0.2rem
+        margin-right: 0.2rem
+        img
+          height: 100%
+          display: block
+          margin: 0 auto
+  &-buy
+    &-info 
+      display: flex
+      justify-content: space-between
+      align-items: center
+      border-top: 1px solid $popular-border
+      border-bottom: 1px solid $popular-border
+      padding-top: 1rem
+      padding-bottom: 1rem
+      padding-left: 1.5rem
+      padding-right: 1.5rem
+    &-code 
+      font-size: 1.3rem   
+      font-weight: 400
+      color: $popular-txt
+    &-stock
+      position: relative
+      background-color: $popular-txt-no
+      color: $text-white
+      font-size: 1.3rem   
+      font-weight: 400
+      padding: 0.5rem 1.5rem 0.5rem 4rem
+      border-radius: 3px
+      &:after
+        position: absolute
+        top: 0.7rem
+        left: 1.5rem
+        content: ''
+        display: block
+        width: 1.5rem
+        height: 1.5rem
+        background: url(../img/product/item_ends.svg) center no-repeat
+    &-comment 
+      color: $color-normal
+      font-size: 1.3rem
+      font-weight: 700
+    &-optional
+      padding: 2.5rem 1.5rem 3rem 1.5rem
+      display: flex
+    &-price 
+      display: flex
+      align-items: center
+      padding-left: 1.5rem
+      margin-bottom: 2rem
+    &-item
+      color: $text-title
+      font-size: 2.4rem
+      font-weight: 300
+      margin-right: 2rem
+    &-old
+      color: $popular-txt
+      text-decoration: line-through
+      font-size: 2.4rem
+      font-weight: 300
+      margin-right: 2rem
+    &-new 
+      color: $text-title
+      font-size: 3rem
+      font-weight: 500      
+      span
+        font-size: 2.4rem
+        font-weight: 300
+    &-cost
+      display: flex
+      align-items: center
+      padding-left: 1.5rem
+      margin-bottom: 5rem
+    .basket-modal-item-count
+      margin: 0
+    .product-buy-btn
+      font-size: 1.6rem
+      font-weight: 700
+      padding: 1.2rem 4.3rem
+      text-decoration: none
+      box-shadow: 0 0 10px rgba(84, 150, 247, 0.37)
+      margin-left: 2rem
+      margin-right: 3rem
+    .popular-buy-add-box
+      width: 4.2rem
+      height: 4.2rem
+      margin-right: 0.8rem
+    &-social 
+      display: flex
+      align-items: center
+      margin-left: 1.5rem
+    &-shares 
+      color: $text-title
+      font-size: 1.5rem
+      font-weight: 700
+      margin-right: 1.5rem
+
+
+.product-slider-arrow 
+    position: absolute
+    top: 50% 
+    margin-top: -1.5rem 
+    width: 3rem
+    height: 3rem
+    z-index: 2
+    cursor: pointer
+    &__left
+      background: url(../img/viewed/arrow_left_normal.svg) no-repeat center
+      left: -0.1rem
+      transition: all 0.3s
+      &:hover 
+        background: url(../img/viewed/arrow_left_hover.svg) no-repeat center
+      &:active
+        background: url(../img/viewed/arrow_left_active.svg) no-repeat center
+    &__right
+      background: url(../img/viewed/arrow_right_normal.svg) no-repeat center
+      right: -0.1rem
+      transition: all 0.3s
+      &:hover 
+        background: url(../img/viewed/arrow_right_hover.svg) no-repeat center
+      &:active
+        background: url(../img/viewed/arrow_right_active.svg) no-repeat center
+
+.product-slider-bottom .slick-active
+  border: 1px solid $popular-border
+.product-slider-bottom .slick-current
+  border: 1px solid #5496f7
+
+.product-property 
+  padding-bottom: 5rem
+  &-wrap 
+    display: flex
+  &-desc
+    flex-grow: 1
+    p 
+      color: $text-color-black
+      font-size: 1.5rem
+      font-weight: 500
+      margin-left: 2.1rem
+  &-value
+    flex-grow: 2
+    p
+      color: $text-color-black
+      font-size: 1.5rem
+      font-weight: 300
+  &-txt 
+    color: $text-color-black
+    font-size: 1.5rem
+    font-weight: 300
+    padding-left: 2.1rem
+    padding-right: 2.1rem
+
+.accordion-tabs 
+  *zoom: 1
+  width: 100%
+  border: 1px solid  $popular-border
+  border-radius: 3px
+  margin-bottom: 1.2rem
+  margin-left: 0
+  padding-left: 0
+  &:before,
+  &:after
+    content: ''
+    display: table
+  &:after
+    clear: both
+  & li 
+    list-style: none
+    &.tab-head-cont:first-child a
+      border-top-left-radius: 3px
+      border-top-right-radius: 3px
+      border-top: 0
+    &.tab-head-cont:last-child a
+      border-bottom-left-radius: 3px
+      border-bottom-right-radius: 3px
+    &.tab-head-cont a
+      text-decoration: none
+      border-top: 1px solid  $popular-border
+      font-size: 1.8rem
+      font-weight: 500
+      color: $color-normal
+      display: block
+      padding: 2rem 3rem
+      span 
+        border-bottom: 1px dashed $color-normal
+      &:focus
+        outline: none
+      &:is-active
+        background-color: $text-white
+        border-bottom: 0
+        font-size: 1.8rem
+        font-weight: 500
+        color: $text-title
+        span 
+          border-bottom: none
+    &.tab-head-cont section
+      padding: 1.5rem 1.6rem
+      background-color: $text-white
+      display: none
+      overflow: hidden
+      width: 100%
+
+.viewed-slider-2 .popular-block
+  margin-left: 0.5rem
+  margin-right: 0.5rem
+  &:hover 
+    transform: scale(1, 1)  
+
+
+      
+ 
+
+                
+
+    
+  

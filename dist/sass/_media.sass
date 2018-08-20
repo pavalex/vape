@@ -1,3 +1,41 @@
+@media (min-width: 1023.98px)
+  .accordion-tabs 
+    border: none
+    position: relative
+    & li
+      &.tab-head-cont
+        display: inline
+      &.tab-head-cont:last-child a
+        border-bottom-left-radius: 0
+        border-bottom-right-radius: 0
+      &.tab-head-cont a
+        display: inline-block
+        vertical-align: baseline
+        zoom: 1
+        *display: inline
+        *vertical-align: auto
+        border-top: 0
+        border-top-left-radius: 3px
+        border-top-right-radius: 3px
+      &.tab-head-cont a.is-active
+        background-color: $text-white
+        border: 1px solid  $popular-border
+        border-bottom: 1px solid transparent
+        margin-bottom: -1px
+        font-size: 1.8rem
+        font-weight: 500
+        color: $text-title
+        span
+          border-bottom: none
+      &.tab-head-cont section
+        border-bottom-left-radius: 3px
+        border-bottom-right-radius: 3px
+        border: 1px solid  $popular-border
+        float: left
+        left: 0
+        padding: 0.7rem 0.8rem
+
+
 @media (max-width: 575.98px)
   html 
     font-size: 8px
@@ -16,8 +54,8 @@
             top: 5px
     &-middle 
       &-basket
-        // width: 25rem
         flex-grow: 1
+        margin-top: 1.7rem
       &-link 
         &-burger 
           display: block          
@@ -27,8 +65,8 @@
         display: none
         &-mobile
           display: block
-      &-basket 
-        margin-top: 2rem
+          margin-left: 1rem
+          margin-right: 1rem
       &-wrap
     &-bottom 
       &-nav
@@ -81,6 +119,39 @@
           width: 100%
           margin-bottom: 1rem
           text-align: center
+  .breadcrumb 
+    &-list 
+      justify-content: center
+    &-link 
+      margin-bottom: 0.5rem
+  .product
+    &-slider
+      &-picture 
+        width: 100%
+      &-bottom
+        display: none
+    &-buy 
+      &-info
+        flex-direction: column
+      &-code,
+      &-stock
+        margin-bottom: 1rem
+      &-comment 
+        margin-top: 1rem
+      &-optional
+          flex-direction: column
+      &-old,
+      .popular-buy-add
+        display: none   
+      &-social         
+        margin-bottom: 2rem 
+    &-property
+      &-none 
+        display: none
+      &-txt 
+        text-align: justify 
+      &-img 
+        width: 30%
 
 @media (min-width: 576px) and (max-width: 767.98px)
   html 
@@ -112,8 +183,6 @@
         display: none
         &-mobile
           display: block
-      &-basket 
-        margin-top: 2rem
       &-wrap
     &-bottom 
       &-nav
@@ -165,6 +234,34 @@
           width: 100%
           margin-bottom: 1rem
           text-align: center
+  .breadcrumb 
+    &-list 
+      justify-content: center
+    &-link 
+      margin-bottom: 0.5rem
+  .product
+    &-slider
+      &-bottom
+        display: none
+    &-buy 
+      &-info
+        flex-direction: column
+      &-code,
+      &-stock
+        margin-bottom: 1rem
+      &-comment 
+        margin-top: 1rem
+      &-optional
+          flex-direction: column  
+      &-social         
+        margin-bottom: 2rem 
+    &-property
+      &-none 
+        display: none
+      &-txt 
+        text-align: justify 
+      &-img 
+        width: 30%
 
 @media (min-width: 768px) and (max-width: 991.98px)
   html 
@@ -223,8 +320,6 @@
     &-subtitle
       text-align: center
   .footer
-    &-logo 
-      // display: none
     &-social
       &-box
         width: 2rem
@@ -246,8 +341,38 @@
           width: 25rem  
         &-count 
           margin-top: 1rem
+  .breadcrumb 
+    &-list 
+      justify-content: center
+    &-link 
+      margin-bottom: 0.5rem
+  .product
+    &-slider
+      &-bottom
+        display: none
+    &-buy 
+      &-info
+        flex-direction: column
+      &-code,
+      &-stock
+        margin-bottom: 1rem
+      &-comment 
+        margin-top: 1rem
+      &-optional
+          flex-direction: column  
+      &-social         
+        margin-bottom: 2rem 
+    &-property
+      &-none 
+        display: none
+      &-txt 
+        text-align: justify 
+      &-img 
+        width: 30% 
 
 @media (min-width: 992px) and (max-width: 1199.98px)
+  .slider-txt 
+    padding-left: 7rem
   .slider-arrow__left
     left: 45%
   .slider-arrow__right
@@ -319,6 +444,8 @@
           width: 25rem  
         &-count 
           margin-top: 1rem
+  .product-property-img
+    width: 30%
 @media (min-width: 1200px)
   .hide-block
     display: block

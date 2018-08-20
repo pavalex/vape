@@ -1,0 +1,23 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.67 32.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #2ca4e0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.13px;
+      }
+
+      .cls-2 {
+        fill: #2ca4e0;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <title>telegram</title>
+  <g>
+    <path class="cls-1" d="M292.51,380.57h25.65a3,3,0,0,1,2.94,2.94v25.65a3,3,0,0,1-2.94,2.94H292.51a3,3,0,0,1-2.94-2.94V383.51a3,3,0,0,1,2.94-2.94h0Z" transform="translate(-289 -380)"/>
+    <path class="cls-2" d="M302.77,398.51v1.4c0,1.92-.31,1.94,1.18.8l1-.8,3.46,2.4c1.08-3.89,2-8.09,3.1-12-4.87,1.64-9.84,3.47-14.71,5.11l4.4,2.06,7.86-4.63-6.34,5.63h0Z" transform="translate(-289 -380)"/>
+  </g>
+</svg>

@@ -243,5 +243,7 @@ $(document).ready(function() {
   });
   $("#price-more").val($("#slider-range").slider("values", 0));
   $("#price-less").val($("#slider-range").slider("values", 1));
+  
+  
 
 });

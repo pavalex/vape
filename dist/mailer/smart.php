@@ -1,5 +1,6 @@
 <?php 
 
+$name = $_POST['name'];
 $phone = $_POST['phone'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
@@ -28,14 +29,15 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $mail->Subject = 'Новый клиент';
 $mail->Body    = '
-	Пользователь оставил свои данные <br>
+    Пользователь оставил свои данные <br>
+    Имя: ' .$name. '
 	Телефон: ' . $phone . '';
 $mail->AltBody = 'Это альтернативный текст';
 
 if(!$mail->send()) {
     return false;
 } else {
-    return true;
+    header ('location: ../thank-you.html');
 }
 
 ?>

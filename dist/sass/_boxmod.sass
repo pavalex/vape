@@ -1,0 +1,60 @@
+.boxmod 
+  background-color: $popular-bg
+  padding-top: 3rem
+  padding-bottom: 5rem
+  &-sort 
+    display: flex
+    align-items: center
+    font-size: 1.5rem
+    color: $text-title
+    margin-top: 1rem
+    margin-bottom: 2.5rem
+    &-range 
+      margin-right: 2rem
+      font-weight: 500     
+    &-price
+      position: relative
+      margin-right: 3.2rem
+      color: $color-normal
+      font-weight: 500      
+      cursor: pointer 
+      &:after 
+        content: ''
+        display: block
+        position: absolute
+        top: 0.8rem
+        right: -1.2rem
+        width: 0.8rem
+        height: 0.8rem
+        background: url(../img/boxmod/sort.svg) center no-repeat
+    &-name 
+      margin-right: 2rem
+      cursor: pointer 
+    &-rating
+      cursor: pointer 
+  &-nav
+    display: flex
+    justify-content: center
+    align-items: center
+  .boxmod-link
+    display: block
+    width: 4.4rem
+    height: 4.4rem
+    border: 1px solid $popular-border
+    border-right: none
+    border-radius: 3px
+    text-align: center
+    line-height: 4.4rem
+    text-decoration: none
+    color: #999999
+    font-size: 1.6rem
+    font-weight: 300
+    &:last-child 
+      border-right: 1px solid $popular-border
+    &__active 
+      border: 1px solid $color-normal
+      color: $color-normal
+    &__o 
+      border-top: none
+      border-bottom: none
+    

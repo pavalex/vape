@@ -229,4 +229,19 @@ $(document).ready(function() {
       }
     });
   });
+
+  /* Range */
+  $("#slider-range").slider({
+    range: true,
+    min: 590,
+    max: 60000,
+    values: [590, 23900],
+    slide: function (event, ui) {
+      $("#price-more").val(ui.values[0]);
+      $("#price-less").val(ui.values[1]);
+    }
+  });
+  $("#price-more").val($("#slider-range").slider("values", 0));
+  $("#price-less").val($("#slider-range").slider("values", 1));
+
 });

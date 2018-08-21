@@ -1007,7 +1007,7 @@ input:focus, button:focus {
 }
 .cigarette-box {
   width: 16rem;
-  height: 14rem;
+  min-height: 14rem;
   border: 1px solid #e0e0e0;
   border-radius: 3px;
   background-color: #fff;
@@ -2311,6 +2311,23 @@ input:focus, button:focus {
   .product-property-img {
     width: 30%;
   }
+
+  .cigarette-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cigarette-box {
+    margin-left: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .boxmod-sort {
+    display: none;
+  }
+  .boxmod h2 {
+    margin-bottom: 2rem;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   html {
@@ -2473,6 +2490,24 @@ input:focus, button:focus {
   .product-property-img {
     width: 30%;
   }
+
+  .cigarette-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cigarette-box {
+    margin-left: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .boxmod-sort {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .boxmod-block {
+    display: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   html {
@@ -2627,6 +2662,20 @@ input:focus, button:focus {
   .product-property-img {
     width: 30%;
   }
+
+  .cigarette-block {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .cigarette-box {
+    margin-left: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .boxmod-block {
+    display: none;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .slider-txt {
@@ -2730,6 +2779,10 @@ input:focus, button:focus {
 
   .product-property-img {
     width: 30%;
+  }
+
+  .filtres {
+    left: -1.5rem;
   }
 }
 @media (min-width: 1200px) {

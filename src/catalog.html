@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
   <link rel="stylesheet" href="css/powerange.min.css">
-  <link rel="stylesheet" href="css/jScrollPane.css">
+  <link rel="stylesheet" href="css/jquery.jscrollpane.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Vape</title>
 </head>
@@ -421,7 +421,7 @@
             <div class="filtres-brand-check-category"></div>
             <p class="filtres-brand-subtitle">Бренд</p>
           </div>
-          <ul id="pane" class="filtres-brand-list scroll-pane">
+          <ul class=" filtres-brand-list scroll-pane">
           <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Vandy Vape</p>
@@ -477,11 +477,9 @@
           <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Vaporesso</p>
-          </li>
-          </ul>         
-          <div class="vert-range">
-            <input type="text" class="js-range">
-          </div>
+          </li>          
+          </ul> 
+          <img class="vertical-range" src="img/boxmod/vertical-range.png" alt="vertical">  
         </div>        
         <div class="filtres-brand">
           <div class="filtres-brand-item">
@@ -506,7 +504,7 @@
             <div class="filtres-brand-check-category"></div>
             <p class="filtres-brand-subtitle">Аккумулятор</p>
           </div>
-          <ul class="filtres-brand-list">
+          <ul class="filtres-brand-list scroll-pane-2">
           <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">1100 mAh</p>
@@ -568,6 +566,7 @@
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">5500 mAh</p>
           </li>
           </ul>
+          <img class="vertical-range" src="img/boxmod/vertical-range.png" alt="vertical">
           <div class="vert-range-2">
             <input type="text" class="js-range-2">
           </div>
@@ -2213,13 +2212,16 @@
   </div>
   <!-- /.footer-bottom -->
 
-  <script src="js/jquery.min.js"></script>
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+  <!-- <script src="js/jquery.mousewheel.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+  <!-- <script src="js/jScrollPane.js"></script> -->
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/jquery.mousewheel.min.js"></script>
-  <script src="js/jScrollPane.js"></script>
-  <script src="js/jquery.nicescroll.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>  
   <script src="js/wow.min.js"></script>
   <script src="slick/slick.min.js"></script>
   <script src="js/powerange.min.js"></script>

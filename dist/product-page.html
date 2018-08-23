@@ -54,10 +54,11 @@
             <a class="header-top-data__enter" href="#">Вход</a>
             <a class="header-top-data__enter" href="#">Регистрация</a>
             <ul class="header-top-data-box">
-              <li class="header-top-data__lang">Ru
+              <li class="header-top-data__lang"><a href="#"><img class="header-top-data-box-img" src="img/header/ru.png" alt="ru"><span>Ru</span><img
+                    class="header-top-data-arrow_menu" src="img/header/arrow_menu.svg" alt="arrow"></a>
                 <ul class="header-top-data-subbox">
-                  <li class="header-top-data-list"><img src="img/header/eng.png" alt="eng">ENG</li>
-                  <li class="header-top-data-list"><img src="img/header/ukr.png" alt="ukr">UKR</li>
+                  <li class="header-top-data-list"><a href="#"><img class="header-top-data-box-img" src="img/header/eng.png" alt="ru"><span>ENG</span></a></li>
+                  <li class="header-top-data-list"><a href="#"><img class="header-top-data-box-img" src="img/header/ukr.png" alt="ukr"><span>UKR</span></a></li>
                 </ul>
               </li>
             </ul>
@@ -294,7 +295,7 @@
   <div class="header-bottom hide-block">
     <div class="container">
       <ul class="header-bottom-nav">
-        <li class="header-bottom-nav__list header-bottom-nav__list-choice">
+        <li id="submenu-liquids" class="header-bottom-nav__list header-bottom-nav__list-choice">
           <a href="#" class="header-bottom-nav__link">Жидкости</a>
           <div class="header-bottom-arrow">
             <svg id="Слой_3" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.29 5.24">
@@ -314,15 +315,15 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
-          <ul class="header-bottom-submenu">
+          <!-- <ul class="header-bottom-submenu">
             <li><a href="#">Atmose Chifles 30 мл</a></li>
             <li><a href="#">Atmose Fraga 30 мл</a></li>
             <li><a href="#">Atmose Imperator 30 мл</a></li>
             <li><a class="border-none" href="#">Atmose Mahorka 30 мл</a></li>
-          </ul>
+          </ul> -->
         </li>
         <!-- /.header-bottom-nav__list -->
-        <li class="header-bottom-nav__list header-bottom-nav__list-choice">
+        <li id="submenu-vape" class="header-bottom-nav__list header-bottom-nav__list-choice">
           <a href="#" class="header-bottom-nav__link">Вейпы</a>
           <div class="header-bottom-arrow">
             <svg id="Слой_4" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.29 5.24">
@@ -342,12 +343,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
-          <ul class="header-bottom-submenu">
+          <!-- <ul class="header-bottom-submenu">
             <li><a href="#">Wismec Predator Black</a></li>
             <li><a href="#">SMOK TFV8 Black</a></li>
             <li><a href="#">esla Three Mod Black</a></li>
             <li><a class="border-none" href="#">UD Goblin Mini V3 RTA</a></li>
-          </ul>
+          </ul> -->
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list">
@@ -360,7 +361,7 @@
           <!-- /.header-bottom-nav__link -->
         </li>
         <!-- /.header-bottom-nav__list -->
-        <li class="header-bottom-nav__list header-bottom-nav__list-choice">
+        <li id="submenu-cigarette" class="header-bottom-nav__list header-bottom-nav__list-choice">
           <a href="#" class="header-bottom-nav__link">Сменные испарители</a>
           <div class="header-bottom-arrow">
             <svg id="Слой_5" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.29 5.24">
@@ -380,12 +381,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
-          <ul class="header-bottom-submenu">
+          <!-- <ul class="header-bottom-submenu">
             <li><a href="#">Aspire Athos A3</a></li>
             <li><a href="#">Cubis BF SS316</a></li>
             <li><a href="#">Freemax Mesh Pro</a></li>
             <li><a class="border-none" href="#">Joyetech Atopack Penguin</a></li>
-          </ul>
+          </ul> -->
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list">
@@ -441,6 +442,75 @@
     <!-- /.callback -->
   </div>
   <!-- /.overlay -->
+
+  <div class="submenu submenu-liquids">
+    <div class="container">
+      <div class="cigarette-block">
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/atmose-chifles.jpg" alt="atmose" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Atmose Chifles</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box cigarette-box">
+            <img src="img/header/atmose-fraga.jpg" alt="atmose" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Atmose Fraga</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/atmose-imperator.jpg" alt="atmose" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Atmose Imperator</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/atmose-mahorka.jpg" alt="atmose" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Atmose Mahorka</div>
+          </div></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="submenu submenu-vape">
+    <div class="container">
+      <div class="cigarette-block">
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/wismec.jpg" alt="vape" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Wismec Predator</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box cigarette-box">
+            <img src="img/header/smok.jpg" alt="vape" class="cigarette-box-img">
+            <div class="cigarette-box-txt">SMOK TFV8</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/tesla.jpg" alt="vape" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Tesla Three Mod</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/goblin.jpg" alt="vape" class="cigarette-box-img">
+            <div class="cigarette-box-txt">UD Goblin</div>
+          </div></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="submenu submenu-cigarette">
+    <div class="container">
+      <div class="cigarette-block">
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/cigarette/cigarette-img-1.jpg" alt="cigarette-img" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Стартовые наборы</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box cigarette-box">
+            <img src="img/cigarette/cigarette-img-2.jpg" alt="cigarette-img" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Box моды</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/cigarette/cigarette-img-3.jpg" alt="cigarette-img" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Вапорайзеры</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/cigarette/cigarette-img-4.jpg" alt="cigarette-img" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Атомайзеры</div>
+          </div></a>
+      </div>
+    </div>
+  </div>
 
   <div class="breadcrumb">
     <div class="container">

@@ -294,13 +294,17 @@ $(document).ready(function() {
   $("#price-less").val($("#slider-range").slider("values", 1));
 
   /* Range vertical */
-  var elem = document.querySelector('.js-range');
-  var init = new Powerange(elem, { vertical: true, hideRange: true, start: 90}); 
+  $(function () {
+    $('.scroll-pane').jScrollPane();
+  });
 
-  var elem = document.querySelector('.js-range-2');
-  var init = new Powerange(elem, { vertical: true, hideRange: true, start: 90 }); 
-
+  $(function() {
+    $(".scroll-pane-2").jScrollPane();
+  });
+ 
 });
+
+
 
 $("#price-more").draggable();
 $("#price-less").draggable();

@@ -94,7 +94,28 @@
       padding: 0
       margin-right: 1rem
       height: 29rem
-      overflow-y: scroll
+      overflow: auto
+    .scroll-pane
+      outline: none
+    .jspDrag
+      background-color: #4b8ff6
+      width: 6px !important
+      height: 15px !important
+      position: relative 
+      right: 5px
+    .jspTrack   
+      right: 5px   
+      background-color: $text-white
+    .jspVerticalBar
+      width: 2px
+      right: 5px
+      background-color: $text-white
+  .vertical-range
+    position: absolute
+    top: 5rem
+    right: 1.8rem
+    z-index: -1   
+      
   .vert-range,
   .vert-range-2
     display: none

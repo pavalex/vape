@@ -80,6 +80,19 @@ $(document).ready(function() {
     // $(".hamburger").toggleClass("hamburger-active");
   });
 
+    /* submenu */
+  $("#submenu-cigarette").click(function() {
+    $(".submenu-cigarette").slideToggle("hide-block");
+  });
+
+  $("#submenu-liquids").click(function() {
+    $(".submenu-liquids").slideToggle("hide-block");
+  });
+
+  $("#submenu-vape").click(function() {
+    $(".submenu-vape").slideToggle("hide-block");
+  });
+
   /* chekbox filtres */
   var items = document.querySelectorAll(".filtres-brand-item .filtres-brand-check");
     
@@ -281,13 +294,17 @@ $(document).ready(function() {
   $("#price-less").val($("#slider-range").slider("values", 1));
 
   /* Range vertical */
-  var elem = document.querySelector('.js-range');
-  var init = new Powerange(elem, { vertical: true, hideRange: true, start: 90}); 
+  $(function () {
+    $('.scroll-pane').jScrollPane();
+  });
 
-  var elem = document.querySelector('.js-range-2');
-  var init = new Powerange(elem, { vertical: true, hideRange: true, start: 90 }); 
-
+  $(function() {
+    $(".scroll-pane-2").jScrollPane();
+  });
+ 
 });
+
+
 
 $("#price-more").draggable();
 $("#price-less").draggable();

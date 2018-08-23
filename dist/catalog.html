@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="slick/slick.css">
   <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/powerange.min.css">
+  <link rel="stylesheet" href="css/jScrollPane.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Vape</title>
 </head>
@@ -54,7 +56,14 @@
           <div class="header-top-data">
             <a class="header-top-data__enter" href="#">Вход</a>
             <a class="header-top-data__enter" href="#">Регистрация</a>
-            <span class="header-top-data__lang">Ru</span>
+            <ul class="header-top-data-box">
+              <li class="header-top-data__lang">Ru
+                <ul class="header-top-data-subbox">
+                  <li class="header-top-data-list"><img src="img/header/eng.png" alt="eng">ENG</li>
+                  <li class="header-top-data-list"><img src="img/header/ukr.png" alt="ukr">UKR</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- /.col-5 -->
@@ -138,7 +147,7 @@
           <div class="header-middle-basket-block">
             <p class="header-middle-basket-block__title">
               <span>4</span> товара</p>
-            <p class="header-middle-basket-block__subtitle">4 560 грн</p>
+            <p id="basket" class="header-middle-basket-block__subtitle">4 560 грн</p>
             <div class="header-middle-basket-block__cart header-middle-basket-block__cart-active">
               <svg id="Слой_3" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.14 17.05">
                 <defs>
@@ -172,18 +181,14 @@
                   <img class="basket-modal-item-img" src="img/basket/wismec.jpg" alt="wismec">
                   <div class="basket-modal-item-desc">
                     <p class="basket-modal-item-txt">Wismec Predator 228W Black</p>
-                    <p class="basket-modal-item-txt">1200
-                      <span>.00 грн</span>
-                    </p>
+                    <p class="basket-modal-item-txt">1200<span>.00 грн</span></p>
                   </div>
                   <div class="basket-modal-item-count">
                     <div class="basket-modal-item-reduce">-</div>
                     <div class="basket-modal-item-lot">2</div>
                     <div class="basket-modal-item-add">+</div>
                   </div>
-                  <div class="basket-modal-item-price">1200
-                    <span>.00 грн</span>
-                  </div>
+                  <div class="basket-modal-item-price">1200<span>.00 грн</span></div>
                   <div class="basket-modal-item-desc__close">
                     <img src="img/basket/close.svg" alt="close">
                   </div>
@@ -203,9 +208,7 @@
                     </div>
                     <!-- /.basket-modal-optional-item -->
                     <div class="basket-modal-optional-item">
-                      <div class="basket-modal-optional-item__check basket-modal-optional-item__check-active">
-                        <img class="basket-modal-optional-item__check-img" src="img/basket/check.png" alt="check">
-                      </div>
+                      <div class="basket-modal-optional-item__check basket-modal-optional-item__check-active"></div>
                       <div class="basket-modal-optional-item__desc basket-modal-optional-item__desc-active">Кабель micro-USB</div>
                     </div>
                     <!-- /.basket-modal-optional-item -->
@@ -236,9 +239,13 @@
                     </div>
                     <!-- /.basket-modal-optional-color -->
                     <div class="basket-modal-optional-title">Выберите гарантию:</div>
-                    <div class="basket-modal-optional-guarantee-choice">
-                      <p class="basket-modal-optional-guarantee-choice-txt">12 месяцев (бесплатно)</p>
-                      <img class="basket-modal-optional-guarantee-choice-img" src="img/basket/arrow.svg" alt="arrow">
+                    <div class="basket-modal-optional-guarantee-select">
+                      <select class="basket-modal-optional-guarantee-choice">
+                        <option>12 месяцев (бесплатно)</option>
+                        <option>24 месяца</option>
+                        <option>36 месяцев</option>
+                      </select>
+                      <img class="basket-modal-optional-guarantee-select-img" src="img/basket/arrow.svg" alt="arrow">
                     </div>
                   </div>
                   <!-- /.basket-modal-optional-guarantee -->
@@ -248,8 +255,7 @@
                   <img class="basket-modal-item-img" src="img/basket/goblin.jpg" alt="goblin">
                   <div class="basket-modal-item-desc">
                     <p class="basket-modal-item-txt">UD Goblin Mini V3 RTA Black</p>
-                    <p class="basket-modal-item-txt">750
-                      <span>.00 грн</span>
+                    <p class="basket-modal-item-txt">750<span>.00 грн</span>
                     </p>
                   </div>
                   <div class="basket-modal-item-count">
@@ -257,8 +263,7 @@
                     <div class="basket-modal-item-lot">1</div>
                     <div class="basket-modal-item-add">+</div>
                   </div>
-                  <div class="basket-modal-item-price">750
-                    <span>.00 грн</span>
+                  <div class="basket-modal-item-price">750<span>.00 грн</span>
                   </div>
                   <div class="basket-modal-item-desc__close">
                     <img src="img/basket/close.svg" alt="close">
@@ -267,12 +272,10 @@
                 <!-- /.basket-modal-item -->
                 <div class="basket-modal-total">
                   <p class="basket-modal-total-txt">Итого:</p>
-                  <p class="basket-modal-total-price">3150
-                    <span>.00 грн</span>
-                  </p>
+                  <p class="basket-modal-total-price">3150<span>.00 грн</span></p>
                 </div>
                 <div class="basket-modal-buy">
-                  <a href="#" class="button button-continue">Продолжить покупки</a>
+                  <a href="#" id="btn-close" class="button button-continue">Продолжить покупки</a>
                   <a href="#" class="button">Оформить заказ</a>
                 </div>
                 <!-- /.basket-modal-total -->
@@ -314,6 +317,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
+          <ul class="header-bottom-submenu">
+            <li><a href="#">Atmose Chifles 30 мл</a></li>
+            <li><a href="#">Atmose Fraga 30 мл</a></li>
+            <li><a href="#">Atmose Imperator 30 мл</a></li>
+            <li><a class="border-none" href="#">Atmose Mahorka 30 мл</a></li>
+          </ul>
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list header-bottom-nav__list-choice">
@@ -336,6 +345,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
+          <ul class="header-bottom-submenu">
+            <li><a href="#">Wismec Predator Black</a></li>
+            <li><a href="#">SMOK TFV8 Black</a></li>
+            <li><a href="#">esla Three Mod Black</a></li>
+            <li><a class="border-none" href="#">UD Goblin Mini V3 RTA</a></li>
+          </ul>
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list">
@@ -368,6 +383,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
+          <ul class="header-bottom-submenu">
+            <li><a href="#">Aspire Athos A3</a></li>
+            <li><a href="#">Cubis BF SS316</a></li>
+            <li><a href="#">Freemax Mesh Pro</a></li>
+            <li><a class="border-none" href="#">Joyetech Atopack Penguin</a></li>
+          </ul>
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list">
@@ -393,57 +414,77 @@
             <div id="slider-range" class="filtres-slider-range"></div>
         </div>
         <button class="button filtres-btn filtres-btn-left">Свернуть</button>
-        <button class="button button-continue filtres-btn">Очистить</button>
+        <button id="filtres-clear" class="button button-continue filtres-btn">Очистить</button>
         <div class="filtres-brand">
           <div class="filtres-brand-item">
-            <div class="filtres-brand-check filtres-brand-check-category"></div>
+            <div class="filtres-brand-check-category"></div>
             <p class="filtres-brand-subtitle">Бренд</p>
           </div>
-          <div class="filtres-brand-item">
+          <ul id="pane" class="filtres-brand-list scroll-pane">
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Vandy Vape</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Teslacigs</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check filtres-brand-check-active"></div>
             <p class="filtres-brand-subtitle">SMOK</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Eleaf</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Joyetech</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Wismec</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">GeekVape</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Vaporesso</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">IJOY</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Sigelei</p>
+          </li> 
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Sigelei</p>
+          </li>
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Vaporesso</p>
+          </li>
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Sigelei</p>
+          </li>
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">Vaporesso</p>
+          </li>
+          </ul>         
+          <div class="vert-range">
+            <input type="text" class="js-range">
           </div>
-          <img src="img/filtres/filtres-vertical.png" alt="vertical" class="filtres-brand-vertical">
-        </div>
+        </div>        
         <div class="filtres-brand">
           <div class="filtres-brand-item">
-            <div class="filtres-brand-check filtres-brand-check-category"></div>
+            <div class="filtres-brand-check-category"></div>
             <p class="filtres-brand-subtitle">Зарядка</p>
           </div>          
           <div class="filtres-brand-item">
@@ -461,54 +502,78 @@
         </div>
         <div class="filtres-brand">
           <div class="filtres-brand-item">
-            <div class="filtres-brand-check filtres-brand-check-category"></div>
+            <div class="filtres-brand-check-category"></div>
             <p class="filtres-brand-subtitle">Аккумулятор</p>
           </div>
-          <div class="filtres-brand-item">
+          <ul class="filtres-brand-list">
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">1100 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">1400 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">1500 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">1600 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">1650 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">2000 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">2100 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">2500 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">2600 mAh</p>
-          </div>
-          <div class="filtres-brand-item">
+          </li>
+          <li class="filtres-brand-item">
             <div class="filtres-brand-check"></div>
             <p class="filtres-brand-subtitle filtres-brand-subtitle-o">3000 mAh</p>
+          </li>
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">3500 mAh</p>
+          </li>
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">300 mAh</p>
+          </li>
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">4500 mAh</p>
+          </li>
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">5000 mAh</p>
+          </li>
+          <li class="filtres-brand-item">
+            <div class="filtres-brand-check"></div>
+            <p class="filtres-brand-subtitle filtres-brand-subtitle-o">5500 mAh</p>
+          </li>
+          </ul>
+          <div class="vert-range-2">
+            <input type="text" class="js-range-2">
           </div>
-          <img src="img/filtres/filtres-vertical.png" alt="vertical" class="filtres-brand-vertical">
         </div>
         <div class="filtres-brand">
           <div class="filtres-brand-item">
-            <div class="filtres-brand-check filtres-brand-check-category"></div>
+            <div class="filtres-brand-check-category"></div>
             <p class="filtres-brand-subtitle">Защита</p>
           </div>
           <div class="filtres-brand-item">
@@ -624,7 +689,7 @@
       <div class="row">
         <div class="offset-lg-3"></div>
         <div class="col-12 col-sm-6 col-lg-3">
-          <div class="popular-block">
+          <div class="popular-block boxmod-block">
             <div class="popular-info">
               <span class="popular-info-code">Код: 9870</span>
               <span class="popular-info-stock">Есть в наличии</span>
@@ -2080,9 +2145,14 @@
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.mousewheel.min.js"></script>
+  <script src="js/jScrollPane.js"></script>
+  <script src="js/jquery.nicescroll.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="slick/slick.min.js"></script>
+  <script src="js/powerange.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

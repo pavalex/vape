@@ -5,7 +5,7 @@
   background-color: $text-white
   color: $filtres-txt
   padding-bottom: 2.4rem
-  z-index: 0
+  z-index: 0  
   &-title    
     font-size: 2rem
     font-weight: 400
@@ -67,14 +67,19 @@
       align-items: center 
       padding-left: 1rem
       margin-bottom: 0.5rem
-      cursor: pointer
     &-check
       width: 1.7rem
       height: 1.7rem
       border: 1px solid $popular-border
       border-radius: 3px
-      margin-right: 1.4rem
+      margin-right: 1.4rem      
+      cursor: pointer
       &-category 
+        width: 1.7rem
+        height: 1.7rem
+        border: 1px solid $popular-border
+        border-radius: 3px
+        margin-right: 1.4rem
         background: url(../img/filtres/category-ico.png) center no-repeat
       &-active 
         background: url(../img/filtres/check.png) center no-repeat
@@ -84,6 +89,15 @@
       font-weight: 500
       &-o 
         font-weight: 300
+    &-list  
+      margin: 0
+      padding: 0
+      margin-right: 1rem
+      height: 29rem
+      overflow-y: scroll
+  .vert-range,
+  .vert-range-2
+    display: none
     
 .ui-widget-content .ui-state-default
   width: 1.1rem
@@ -98,3 +112,23 @@
   border: none
 .ui-widget-header
   background-color: $color-normal
+  
+.vert-range,
+.vert-range-2
+  position: absolute
+  height: 27.5rem
+  top: 5.3rem
+  right: 1.4rem
+.range-handle
+  width: 0.6rem
+  height: 1.5rem
+  margin-left: 1.1rem
+  cursor: pointer
+  border-radius: 2px
+  box-shadow: none
+  background-color: $color-normal
+.range-quantity
+  background-color: #c8cdd1
+.vertical
+  width: 0.2rem
+  background-color: #c8cdd1

@@ -53,7 +53,15 @@
           <div class="header-top-data">
             <a class="header-top-data__enter" href="#">Вход</a>
             <a class="header-top-data__enter" href="#">Регистрация</a>
-            <span class="header-top-data__lang">Ru</span>
+            <ul class="header-top-data-box">
+              <li class="header-top-data__lang"><a href="#"><img class="header-top-data-box-img" src="img/header/ru.png" alt="ru"><span>Ru</span><img
+                    class="header-top-data-arrow_menu" src="img/header/arrow_menu.svg" alt="arrow"></a>
+                <ul class="header-top-data-subbox">
+                  <li class="header-top-data-list"><a href="#"><img class="header-top-data-box-img" src="img/header/eng.png" alt="ru"><span>ENG</span></a></li>
+                  <li class="header-top-data-list"><a href="#"><img class="header-top-data-box-img" src="img/header/ukr.png" alt="ukr"><span>UKR</span></a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- /.col-5 -->
@@ -137,7 +145,7 @@
           <div class="header-middle-basket-block">
             <p class="header-middle-basket-block__title">
               <span>4</span> товара</p>
-            <p class="header-middle-basket-block__subtitle">4 560 грн</p>
+            <p id="basket" class="header-middle-basket-block__subtitle">4 560 грн</p>
             <div class="header-middle-basket-block__cart header-middle-basket-block__cart-active">
               <svg id="Слой_3" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.14 17.05">
                 <defs>
@@ -171,18 +179,14 @@
                   <img class="basket-modal-item-img" src="img/basket/wismec.jpg" alt="wismec">
                   <div class="basket-modal-item-desc">
                     <p class="basket-modal-item-txt">Wismec Predator 228W Black</p>
-                    <p class="basket-modal-item-txt">1200
-                      <span>.00 грн</span>
-                    </p>
+                    <p class="basket-modal-item-txt">1200<span>.00 грн</span></p>
                   </div>
                   <div class="basket-modal-item-count">
                     <div class="basket-modal-item-reduce">-</div>
                     <div class="basket-modal-item-lot">2</div>
                     <div class="basket-modal-item-add">+</div>
                   </div>
-                  <div class="basket-modal-item-price">1200
-                    <span>.00 грн</span>
-                  </div>
+                  <div class="basket-modal-item-price">1200<span>.00 грн</span></div>
                   <div class="basket-modal-item-desc__close">
                     <img src="img/basket/close.svg" alt="close">
                   </div>
@@ -202,9 +206,7 @@
                     </div>
                     <!-- /.basket-modal-optional-item -->
                     <div class="basket-modal-optional-item">
-                      <div class="basket-modal-optional-item__check basket-modal-optional-item__check-active">
-                        <img class="basket-modal-optional-item__check-img" src="img/basket/check.png" alt="check">
-                      </div>
+                      <div class="basket-modal-optional-item__check basket-modal-optional-item__check-active"></div>
                       <div class="basket-modal-optional-item__desc basket-modal-optional-item__desc-active">Кабель micro-USB</div>
                     </div>
                     <!-- /.basket-modal-optional-item -->
@@ -235,9 +237,13 @@
                     </div>
                     <!-- /.basket-modal-optional-color -->
                     <div class="basket-modal-optional-title">Выберите гарантию:</div>
-                    <div class="basket-modal-optional-guarantee-choice">
-                      <p class="basket-modal-optional-guarantee-choice-txt">12 месяцев (бесплатно)</p>
-                      <img class="basket-modal-optional-guarantee-choice-img" src="img/basket/arrow.svg" alt="arrow">
+                    <div class="basket-modal-optional-guarantee-select">
+                      <select class="basket-modal-optional-guarantee-choice">
+                        <option>12 месяцев (бесплатно)</option>
+                        <option>24 месяца</option>
+                        <option>36 месяцев</option>
+                      </select>
+                      <img class="basket-modal-optional-guarantee-select-img" src="img/basket/arrow.svg" alt="arrow">
                     </div>
                   </div>
                   <!-- /.basket-modal-optional-guarantee -->
@@ -247,8 +253,7 @@
                   <img class="basket-modal-item-img" src="img/basket/goblin.jpg" alt="goblin">
                   <div class="basket-modal-item-desc">
                     <p class="basket-modal-item-txt">UD Goblin Mini V3 RTA Black</p>
-                    <p class="basket-modal-item-txt">750
-                      <span>.00 грн</span>
+                    <p class="basket-modal-item-txt">750<span>.00 грн</span>
                     </p>
                   </div>
                   <div class="basket-modal-item-count">
@@ -256,8 +261,7 @@
                     <div class="basket-modal-item-lot">1</div>
                     <div class="basket-modal-item-add">+</div>
                   </div>
-                  <div class="basket-modal-item-price">750
-                    <span>.00 грн</span>
+                  <div class="basket-modal-item-price">750<span>.00 грн</span>
                   </div>
                   <div class="basket-modal-item-desc__close">
                     <img src="img/basket/close.svg" alt="close">
@@ -266,12 +270,10 @@
                 <!-- /.basket-modal-item -->
                 <div class="basket-modal-total">
                   <p class="basket-modal-total-txt">Итого:</p>
-                  <p class="basket-modal-total-price">3150
-                    <span>.00 грн</span>
-                  </p>
+                  <p class="basket-modal-total-price">3150<span>.00 грн</span></p>
                 </div>
                 <div class="basket-modal-buy">
-                  <a href="#" class="button button-continue">Продолжить покупки</a>
+                  <a href="#" id="btn-close" class="button button-continue">Продолжить покупки</a>
                   <a href="#" class="button">Оформить заказ</a>
                 </div>
                 <!-- /.basket-modal-total -->
@@ -293,8 +295,36 @@
   <div class="header-bottom hide-block">
     <div class="container">
       <ul class="header-bottom-nav">
-        <li class="header-bottom-nav__list header-bottom-nav__list-choice">
+        <li id="submenu-liquids" class="header-bottom-nav__list header-bottom-nav__list-choice">
           <a href="#" class="header-bottom-nav__link">Жидкости</a>
+          <div class="header-bottom-arrow">
+            <svg id="Слой_3" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.29 5.24">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: none;
+                    stroke: #283a44;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 1.13px;
+                  }
+                </style>
+              </defs>
+              <title>arrow_menu</title>
+              <polyline class="cls-1" points="0.57 0.61 4.62 4.67 8.72 0.57" />
+            </svg>
+          </div>
+          <!-- /.header-bottom-nav__link -->
+          <!-- <ul class="header-bottom-submenu">
+            <li><a href="#">Atmose Chifles 30 мл</a></li>
+            <li><a href="#">Atmose Fraga 30 мл</a></li>
+            <li><a href="#">Atmose Imperator 30 мл</a></li>
+            <li><a class="border-none" href="#">Atmose Mahorka 30 мл</a></li>
+          </ul> -->
+        </li>
+        <!-- /.header-bottom-nav__list -->
+        <li id="submenu-vape" class="header-bottom-nav__list header-bottom-nav__list-choice">
+          <a href="#" class="header-bottom-nav__link">Вейпы</a>
           <div class="header-bottom-arrow">
             <svg id="Слой_4" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.29 5.24">
               <defs>
@@ -313,10 +343,26 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
+          <!-- <ul class="header-bottom-submenu">
+            <li><a href="#">Wismec Predator Black</a></li>
+            <li><a href="#">SMOK TFV8 Black</a></li>
+            <li><a href="#">esla Three Mod Black</a></li>
+            <li><a class="border-none" href="#">UD Goblin Mini V3 RTA</a></li>
+          </ul> -->
         </li>
         <!-- /.header-bottom-nav__list -->
-        <li class="header-bottom-nav__list header-bottom-nav__list-choice">
-          <a href="#" class="header-bottom-nav__link">Вейпы</a>
+        <li class="header-bottom-nav__list">
+          <a href="#" class="header-bottom-nav__link">Бачки</a>
+          <!-- /.header-bottom-nav__link -->
+        </li>
+        <!-- /.header-bottom-nav__list -->
+        <li class="header-bottom-nav__list">
+          <a href="catalog.html" class="header-bottom-nav__link">Бокс моды</a>
+          <!-- /.header-bottom-nav__link -->
+        </li>
+        <!-- /.header-bottom-nav__list -->
+        <li id="submenu-cigarette" class="header-bottom-nav__list header-bottom-nav__list-choice">
+          <a href="#" class="header-bottom-nav__link">Сменные испарители</a>
           <div class="header-bottom-arrow">
             <svg id="Слой_5" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.29 5.24">
               <defs>
@@ -335,38 +381,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
-        </li>
-        <!-- /.header-bottom-nav__list -->
-        <li class="header-bottom-nav__list">
-          <a href="#" class="header-bottom-nav__link">Бачки</a>
-          <!-- /.header-bottom-nav__link -->
-        </li>
-        <!-- /.header-bottom-nav__list -->
-        <li class="header-bottom-nav__list">
-          <a href="catalog.html" class="header-bottom-nav__link">Бокс моды</a>
-          <!-- /.header-bottom-nav__link -->
-        </li>
-        <!-- /.header-bottom-nav__list -->
-        <li class="header-bottom-nav__list header-bottom-nav__list-choice">
-          <a href="#" class="header-bottom-nav__link">Сменные испарители</a>
-          <div class="header-bottom-arrow">
-            <svg id="Слой_6" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.29 5.24">
-              <defs>
-                <style>
-                  .cls-1 {
-                    fill: none;
-                    stroke: #283a44;
-                    stroke-linecap: round;
-                    stroke-linejoin: round;
-                    stroke-width: 1.13px;
-                  }
-                </style>
-              </defs>
-              <title>arrow_menu</title>
-              <polyline class="cls-1" points="0.57 0.61 4.62 4.67 8.72 0.57" />
-            </svg>
-          </div>
-          <!-- /.header-bottom-nav__link -->
+          <!-- <ul class="header-bottom-submenu">
+            <li><a href="#">Aspire Athos A3</a></li>
+            <li><a href="#">Cubis BF SS316</a></li>
+            <li><a href="#">Freemax Mesh Pro</a></li>
+            <li><a class="border-none" href="#">Joyetech Atopack Penguin</a></li>
+          </ul> -->
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list">
@@ -422,6 +442,75 @@
     <!-- /.callback -->
   </div>
   <!-- /.overlay -->
+
+  <div class="submenu submenu-liquids">
+    <div class="container">
+      <div class="cigarette-block">
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/atmose-chifles.jpg" alt="atmose" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Atmose Chifles</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box cigarette-box">
+            <img src="img/header/atmose-fraga.jpg" alt="atmose" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Atmose Fraga</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/atmose-imperator.jpg" alt="atmose" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Atmose Imperator</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/atmose-mahorka.jpg" alt="atmose" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Atmose Mahorka</div>
+          </div></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="submenu submenu-vape">
+    <div class="container">
+      <div class="cigarette-block">
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/wismec.jpg" alt="vape" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Wismec Predator</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box cigarette-box">
+            <img src="img/header/smok.jpg" alt="vape" class="cigarette-box-img">
+            <div class="cigarette-box-txt">SMOK TFV8</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/tesla.jpg" alt="vape" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Tesla Three Mod</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/header/goblin.jpg" alt="vape" class="cigarette-box-img">
+            <div class="cigarette-box-txt">UD Goblin</div>
+          </div></a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="submenu submenu-cigarette">
+    <div class="container">
+      <div class="cigarette-block">
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/cigarette/cigarette-img-1.jpg" alt="cigarette-img" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Стартовые наборы</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box cigarette-box">
+            <img src="img/cigarette/cigarette-img-2.jpg" alt="cigarette-img" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Box моды</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/cigarette/cigarette-img-3.jpg" alt="cigarette-img" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Вапорайзеры</div>
+          </div></a>
+        <a class="cigarette-box-link" href="#"><div class="cigarette-box">
+            <img src="img/cigarette/cigarette-img-4.jpg" alt="cigarette-img" class="cigarette-box-img">
+            <div class="cigarette-box-txt">Атомайзеры</div>
+          </div></a>
+      </div>
+    </div>
+  </div>
 
   <div class="breadcrumb">
     <div class="container">
@@ -517,8 +606,7 @@
                 </div>
                 <!-- /.basket-modal-optional-item -->
                 <div class="basket-modal-optional-item">
-                  <div class="basket-modal-optional-item__check basket-modal-optional-item__check-active"><img class="basket-modal-optional-item__check-img"
-                      src="img/basket/check.png" alt="check"></div>
+                  <div class="basket-modal-optional-item__check basket-modal-optional-item__check-active"></div>
                   <div class="basket-modal-optional-item__desc basket-modal-optional-item__desc-active">Кабель micro-USB</div>
                 </div>
                 <!-- /.basket-modal-optional-item -->
@@ -549,10 +637,14 @@
                 </div>
                 <!-- /.basket-modal-optional-color -->
                 <div class="basket-modal-optional-title">Выберите гарантию:</div>
-                <div class="basket-modal-optional-guarantee-choice">
-                  <p class="basket-modal-optional-guarantee-choice-txt">12 месяцев (бесплатно)</p>
-                  <img class="basket-modal-optional-guarantee-choice-img" src="img/basket/arrow.svg" alt="arrow">
-                </div>
+                <div class="basket-modal-optional-guarantee-select">
+                  <select class="basket-modal-optional-guarantee-choice">
+                    <option>12 месяцев (бесплатно)</option>
+                    <option>24 месяца</option>
+                    <option>36 месяцев</option>                  
+                  </select>
+                  <img class="basket-modal-optional-guarantee-select-img" src="img/basket/arrow.svg" alt="arrow">
+                </div>                
               </div>
             </div>
             <div class="product-buy-price">
@@ -705,7 +797,7 @@
       </div>
       <!-- /.viewed-title -->
       <div class="viewed-slider-2">
-        <div class="popular-block">
+        <div class="popular-block product-viewed-block">
           <div class="popular-info">
             <span class="popular-info-code">Код: 9870</span>
             <span class="popular-info-stock">Есть в наличии</span>
@@ -760,7 +852,7 @@
           </div>
         </div>
         <!-- /.viewed-slider-box -->
-        <div class="popular-block">
+        <div class="popular-block product-viewed-block">
           <div class="popular-info">
             <span class="popular-info-code">Код: 9870</span>
             <span class="popular-info-stock">Есть в наличии</span>
@@ -797,11 +889,9 @@
           <div class="popular-buy">
             <div class="popular-buy-add">
               <div class="popular-buy-add-box">
-                <div class="popular-buy-add-box">
-                  <img class="popular-buy-add-img popular-buy-add-img__normal" src="img/popular/compare_normal.svg" alt="compare">
-                  <img class="popular-buy-add-img popular-buy-add-img__hover" src="img/popular/compare_hover.svg" alt="hover">
-                  <img class="popular-buy-add-img popular-buy-add-img__active" src="img/popular/compare_active.svg" alt="active">
-                </div>
+                  <img class="popular-buy-add-img popular-buy-add-img__normal" src="img/popular/compare_normal.png" alt="compare">
+                  <img class="popular-buy-add-img popular-buy-add-img__hover" src="img/popular/compare_hover.png" alt="hover">
+                  <img class="popular-buy-add-img popular-buy-add-img__active" src="img/popular/compare_active.png" alt="active">                
               </div>
               <div class="popular-buy-add-box">
                 <img class="popular-buy-add-img popular-buy-add-img__normal" src="img/popular/favourites_normal.svg" alt="favourites">
@@ -815,7 +905,7 @@
           </div>
         </div>
         <!-- /.viewed-slider-box -->
-        <div class="popular-block">
+        <div class="popular-block product-viewed-block">
           <div class="popular-info">
             <span class="popular-info-code">Код: 9870</span>
             <span class="popular-info-stock">Есть в наличии</span>
@@ -870,7 +960,7 @@
           </div>
         </div>
         <!-- /.viewed-slider-box -->
-        <div class="popular-block">
+        <div class="popular-block product-viewed-block">
           <div class="popular-info">
             <span class="popular-info-code">Код: 9870</span>
             <span class="popular-info-stock">Есть в наличии</span>
@@ -925,7 +1015,7 @@
           </div>
         </div>
         <!-- /.viewed-slider-box -->
-        <div class="popular-block">
+        <div class="popular-block product-viewed-block">
           <div class="popular-info">
             <span class="popular-info-code">Код: 9870</span>
             <span class="popular-info-stock">Есть в наличии</span>

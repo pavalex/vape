@@ -82,7 +82,14 @@
           <div class="header-top-data">
             <a class="header-top-data__enter" href="#">Вход</a>
             <a class="header-top-data__enter" href="#">Регистрация</a>
-            <span class="header-top-data__lang">Ru</span>
+            <ul class="header-top-data-box">
+              <li class="header-top-data__lang">Ru
+                <ul class="header-top-data-subbox">
+                  <li class="header-top-data-list"><img src="img/header/eng.png" alt="eng">ENG</li>
+                  <li class="header-top-data-list"><img src="img/header/ukr.png" alt="ukr">UKR</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
         <!-- /.col-5 -->
@@ -166,7 +173,7 @@
           <div class="header-middle-basket-block">
             <p class="header-middle-basket-block__title">
               <span>4</span> товара</p>
-            <p class="header-middle-basket-block__subtitle">4 560 грн</p>
+            <p id="basket" class="header-middle-basket-block__subtitle">4 560 грн</p>
             <div class="header-middle-basket-block__cart header-middle-basket-block__cart-active">
               <svg id="Слой_9" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.14 17.05">
                 <defs>
@@ -227,8 +234,7 @@
                     </div>
                     <!-- /.basket-modal-optional-item -->
                     <div class="basket-modal-optional-item">
-                      <div class="basket-modal-optional-item__check basket-modal-optional-item__check-active"><img class="basket-modal-optional-item__check-img"
-                          src="img/basket/check.png" alt="check"></div>
+                      <div class="basket-modal-optional-item__check basket-modal-optional-item__check-active"></div>
                       <div class="basket-modal-optional-item__desc basket-modal-optional-item__desc-active">Кабель micro-USB</div>
                     </div>
                     <!-- /.basket-modal-optional-item -->
@@ -259,9 +265,13 @@
                     </div>
                     <!-- /.basket-modal-optional-color -->
                     <div class="basket-modal-optional-title">Выберите гарантию:</div>
-                    <div class="basket-modal-optional-guarantee-choice">
-                      <p class="basket-modal-optional-guarantee-choice-txt">12 месяцев (бесплатно)</p>
-                      <img class="basket-modal-optional-guarantee-choice-img" src="img/basket/arrow.svg" alt="arrow">
+                    <div class="basket-modal-optional-guarantee-select">
+                      <select class="basket-modal-optional-guarantee-choice">
+                        <option>12 месяцев (бесплатно)</option>
+                        <option>24 месяца</option>
+                        <option>36 месяцев</option>
+                      </select>
+                      <img class="basket-modal-optional-guarantee-select-img" src="img/basket/arrow.svg" alt="arrow">
                     </div>
                   </div>
                   <!-- /.basket-modal-optional-guarantee -->
@@ -291,7 +301,7 @@
                   <p class="basket-modal-total-price">3150<span>.00 грн</span></p>
                 </div>
                 <div class="basket-modal-buy">
-                  <a href="#" class="button button-continue">Продолжить покупки</a>
+                  <a href="#" id="btn-close" class="button button-continue">Продолжить покупки</a>
                   <a href="#" class="button">Оформить заказ</a>
                 </div>
                 <!-- /.basket-modal-total -->
@@ -333,6 +343,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
+          <ul class="header-bottom-submenu">
+            <li><a href="#">Atmose Chifles 30 мл</a></li>
+            <li><a href="#">Atmose Fraga 30 мл</a></li>
+            <li><a href="#">Atmose Imperator 30 мл</a></li>
+            <li><a class="border-none" href="#">Atmose Mahorka 30 мл</a></li>
+          </ul>
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list header-bottom-nav__list-choice">
@@ -355,6 +371,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
+          <ul class="header-bottom-submenu">
+            <li><a href="#">Wismec Predator Black</a></li>
+            <li><a href="#">SMOK TFV8 Black</a></li>
+            <li><a href="#">esla Three Mod Black</a></li>
+            <li><a class="border-none" href="#">UD Goblin Mini V3 RTA</a></li>
+          </ul>
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list">
@@ -387,6 +409,12 @@
             </svg>
           </div>
           <!-- /.header-bottom-nav__link -->
+          <ul class="header-bottom-submenu">
+            <li><a href="#">Aspire Athos A3</a></li>
+            <li><a href="#">Cubis BF SS316</a></li>
+            <li><a href="#">Freemax Mesh Pro</a></li>
+            <li><a class="border-none" href="#">Joyetech Atopack Penguin</a></li>
+          </ul>
         </li>
         <!-- /.header-bottom-nav__list -->
         <li class="header-bottom-nav__list">
@@ -432,7 +460,8 @@
               <input id="callback-phone" type="tel" name="phone" class="input callback-form-input callback-form-input__tel" required placeholder="+7 (XХХ) ХХХ ХХ ХХ">
             </div>
             <button onclick="yaCounter50045797.reachGoal('SEND_FORM'); return true;" type="submit" class="button callback-form-btn">Перезвоните
-              мне</button>
+              мне
+            </button>
           </div>
         </form>
       </div>

@@ -1,6 +1,7 @@
 new WOW().init();
 
-$(document).ready(function() {
+$(document).ready(function() { 
+
   /* modal-callback */
   $(".header-middle-btn").on("click", function() {
     $(".overlay").fadeIn(400);
@@ -33,11 +34,15 @@ $(document).ready(function() {
   });
 
   /* basket-modal */
-  $(".header-middle-basket-block__subtitle").on("click", function() {
+  $("#basket").on("click", function() {
     $(".overlay-basket").fadeIn(400);
   });
 
   $(".basket-modal-close").on("click", function() {
+    $(".overlay-basket").fadeOut(400);
+  });
+
+  $("#btn-close").on("click", function () {
     $(".overlay-basket").fadeOut(400);
   });
 
@@ -51,14 +56,58 @@ $(document).ready(function() {
     });
   });
 
+  /* chekbox basket color */
+  var items = document.querySelectorAll(".basket-modal-optional-guarantee-color .basket-modal-optional-guarantee-color-box");
+
+  for (var i = 0; i < items.length; i++) {
+    items[i].onclick = function () {
+      $(".basket-modal-optional-guarantee-color .basket-modal-optional-guarantee-color-box").removeClass("basket-modal-optional-guarantee-color-box__active");
+      this.classList.toggle("basket-modal-optional-guarantee-color-box__active");
+    }
+  }
+
+  var items = document.querySelectorAll(".basket-modal-optional-item .basket-modal-optional-item__check");
+
+  for (var i = 0; i < items.length; i++) {
+    items[i].onclick = function () {
+      this.classList.toggle("basket-modal-optional-item__check-active");
+    }
+  }
+
   /* menu */
   $(".header-middle-link-burger").click(function() {
     $(".header-bottom").slideToggle("hide-block");
     // $(".hamburger").toggleClass("hamburger-active");
   });
 
+    /* submenu */
+  $("#submenu-cigarette").click(function() {
+    $(".submenu-cigarette").slideToggle("hide-block");
+  });
+
+  $("#submenu-liquids").click(function() {
+    $(".submenu-liquids").slideToggle("hide-block");
+  });
+
+  $("#submenu-vape").click(function() {
+    $(".submenu-vape").slideToggle("hide-block");
+  });
+
+  /* chekbox filtres */
+  var items = document.querySelectorAll(".filtres-brand-item .filtres-brand-check");
+    
+    for(var i = 0; i < items.length; i++){
+        items[i].onclick = function(){
+          this.classList.toggle('filtres-brand-check-active');
+        }
+    }
+
+  $("#filtres-clear").click(function() {
+    $(".filtres-brand-item .filtres-brand-check").removeClass("filtres-brand-check-active");
+  });
+
   /* jquery.maskedinput */
-  $(".callback-form-input__tel").mask("+9(999) 999-99-99");
+  $(".callback-form-input__tel").mask("+7(999) 999-99-99");
 
   /* slick */
   $(".slider-bg").slick({
@@ -243,7 +292,17 @@ $(document).ready(function() {
   });
   $("#price-more").val($("#slider-range").slider("values", 0));
   $("#price-less").val($("#slider-range").slider("values", 1));
-  
-  
+
+  /* Range vertical */
+  var elem = document.querySelector('.js-range');
+  var init = new Powerange(elem, { vertical: true, hideRange: true, start: 90}); 
+
+  var elem = document.querySelector('.js-range-2');
+  var init = new Powerange(elem, { vertical: true, hideRange: true, start: 90 }); 
 
 });
+
+$("#price-more").draggable();
+$("#price-less").draggable();
+$(".js-range").draggable();
+$(".js-range-2").draggable();

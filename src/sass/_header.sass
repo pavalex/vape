@@ -39,35 +39,71 @@
         color: $text-color
         text-decoration: none
         margin-left: 3rem
-      &__lang         
+      &-box
+        margin: 0
+        padding: 0
+        list-style: none
+        backface-visibility: hidden
+        cursor: pointer
+        &-img 
+          border: 1px solid $color-border
+          border-radius: 3px
+      &-subbox
+        list-style: none
+        background-color: $text-white
+        position: absolute
+        width: 9.5rem
+        outline: 1px solid #e0e0e0
+        z-index: 1
+        left: -1rem
+        top: 3rem
+        visibility: hidden
+        opacity: 0
+        transform: perspective(600px) rotateX(-90deg)
+        transform-origin: 0% 0%
+        transition: 0.6s ease-in-out
+      &-list        
+        width: 9.5rem
+        margin-left: -4rem
+        padding-left: 1.1rem
+        padding-top: 0.5rem
+        padding-bottom: 0.5rem 
+        transition: all 0.3s
+        a 
+          padding: 0
+          margin: 0
+          display: flex
+          align-items: center
+          text-decoration: none
+          color:  $text-color
+        &:hover
+          background-color: $popular-bg         
+      &__lang      
         position: relative
         text-transform: uppercase
         font-size: 1.3rem
         font-weight: 400
-        color: $text-color
+        padding: 0
+        margin: 0
         margin-left: 11.3rem
         margin-right: 1.7rem
-        &::before
-          content: ''
-          display: block
-          position: absolute
-          top: 0
-          left: -35px
-          width: 25px
-          height: 17px
-          border: 1px solid $color-border
-          border-radius: 2px
-          background: url(../img/header/rus.png) center no-repeat
-        &::after 
-          content: ''
-          display: block
-          position: absolute
-          top: 7px
-          right: -15px
-          width: 11px
-          height: 6px
-          background: url(../img/header/arrow_menu.svg) center no-repeat
-          cursor: pointer
+        &:hover .header-top-data-subbox
+            visibility: visible
+            opacity: 1
+            transform: perspective(600px) rotateX(0deg)
+        a 
+          padding: 0
+          margin: 0
+          display: flex
+          align-items: center
+          text-decoration: none
+          color:  $text-color        
+        span 
+          margin-left: 1rem
+          margin-right: 0.5rem
+      &-arrow_menu 
+        width: 1.1rem
+        height: 0.6rem
   &-middle 
     padding-top: 2rem
     padding-bottom: 2rem
@@ -215,7 +251,9 @@
       margin: 0
       padding: 0
       list-style: none
+      backface-visibility: hidden
       &__list 
+        position: relative
         font-size: 1.55rem
         font-weight: 500        
         &-choice
@@ -226,13 +264,75 @@
             color: $color-normal
           &:hover .cls-1
             transition: all 0.3s
-            stroke: $color-normal                       
+            stroke: $color-normal
+          &:hover .header-bottom-submenu
+            visibility: visible
+            opacity: 1
+            transform: perspective(600px) rotateX(0deg)                    
         .header-bottom-nav__link
           color: $text-color-black
           text-decoration: none
           transition: all 0.3s
           &:hover 
             color: $color-normal
+    &-submenu 
+      list-style: none
+      padding: 0
+      margin-top: 1rem      
+      background-color: $text-white
+      border-radius: 3px
+      position: absolute
+      width: 25rem
+      box-shadow: 0 0 21px rgba(0, 0, 0, 0.1)
+      border: 1px solid #e0e0e0
+      z-index: 1
+      left: 0
+      top: 3rem
+      visibility: hidden
+      opacity: 0
+      transform: perspective(600px) rotateX(-90deg)
+      transform-origin: 0% 0%
+      transition: 0.6s ease-in-out
+      li
+        transition: all 0.3s
+        &:hover
+          background-color: $popular-bg                 
+        a 
+          display: block          
+          padding-left: 1rem
+          padding-right: 1rem
+          margin-left: 1rem
+          margin-right: 1rem         
+          text-decoration: none
+          border-bottom: 1px solid $color-border 
+          color: $text-color-black
+          font-size: 15px
+          font-weight: 500
+          padding-top: 1rem
+          padding-bottom: 1rem
+          padding-left: 1rem
+        .border-none
+          border-bottom: none
+
+.submenu 
+  padding-top: 2rem
+  padding-bottom: 5rem
+  background-color: #fff
+  &-cigarette,
+  &-liquids,
+  &-vape
+    margin-top: 0
+    position: relative
+    z-index: 1
+    display: none
+  .cigarette-block
+    margin-top: 0
+          
+          
+      
+          
+            
+
           
       
             
